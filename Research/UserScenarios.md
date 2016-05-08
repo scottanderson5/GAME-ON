@@ -1,0 +1,10 @@
+#User Scenarios
+
+**Randy:**
+    Randy is a native Texan and a family man. He likes to go out and do things with his family, usually new things that they have never tried before. They found out about the game rated app about 3 months ago and have enjoyed it very much. Today is Friday, and he is driving back home. Once he gets there, he sees that the new game has arrived that his family volunteered for. They sit down and play the game. Afterwards, he decides that the game was fun, but they are not going to purchase it. So they need to return it. He goes on the app and informs the app that they will be putting the app in the mail with the return shipping. Once the app confirms that the game has been recieved back at the game developer, they can then rate the game, and sign up to recieve a new one.  
+
+**Ben:**
+    Ben has recently moved to Denton Texas, a town he does not know very well. He is trying very hard to meet new people. But tonight a few friends of his from his new job have told him to come over to their place. They ask him to bring some beer as well. Once he arrives he sees that they have a game set up to play, one that he is unfamiliar with. They tell him they have never played it before either, and that it was one sent via the app. Afterwards, Ben thinks it would be fun to sign up so he could recieve games to play solo in his downtime. He goes to the app, creates a profile, and then signs up to recieve a game as a solo player. 
+
+**Susan:**
+    Susan and her husband are at home on a Friday. Susan has recieved an email that the game that last played, and did not particularly enjoy, has been recived back after they returned it. She can now go and rate the game. She logs onto the app and gives her feedback on the game, how they thought it was confusing and had too many parts. The instructions could have been more clear, she explains, in describing what all the pieces were supposed to be doing. After submitting her feedback, she signs her and her husband up to recieve a new game in the mail. 
