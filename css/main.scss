@@ -21,6 +21,11 @@
 	float: left;
 }
 
+.right-header-overflow-wrap{
+	overflow: hidden;
+	float: right;
+}
+
 .logo-header-wrap{
 	padding: 1em;
 	float: left;
@@ -31,7 +36,8 @@
 }
 
 .header-nav{
-	font-family: 'Helvetica Neue'; 
+	font-family: $MainFontFamily;
+	font-weight: $HeaderFontWeight;
 	padding: 4.5em 0em 0em 0em;
 	overflow: hidden;
 	float: left;
@@ -46,6 +52,21 @@
 	li:hover{
 		text-decoration: underline;
 	}
+}
+
+.pic-header-wrap{
+	padding: 1em;
+	float: right;
+}
+
+.pic-header{
+	width: 4em;
+}
+
+.user-name-header{
+	font-family: $MainFontFamily;
+	font-weight: $HeaderFontWeight;
+	float: right;
 }
 
 
