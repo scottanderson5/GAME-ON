@@ -27,18 +27,18 @@
 }
 
 .logo-header-wrap{
-	padding: 1em;
+	padding: 1.7em 1em 1em 1em;
 	float: left;
 }
 
 .logo-header{
-	width: 5em;
+	width: 13em;
 }
 
 .header-nav{
 	font-family: $MainFontFamily;
 	font-weight: $HeaderFontWeight;
-	padding: 4.5em 0em 0em 0em;
+	padding: 3em 0em 0em 0em;
 	overflow: hidden;
 	float: left;
 
@@ -55,7 +55,7 @@
 }
 
 .pic-header-wrap{
-	padding: 1.9em 1em 1em 1em;
+	padding: 1.3em 1em 1em 1em;
 	float: right;
 }
 
@@ -66,7 +66,7 @@
 .user-name-header{
 	font-family: $MainFontFamily;
 	font-weight: $HeaderFontWeight;
-	padding: 4.5em 0em 0em 0em;
+	padding: 3em 0em 0em 0em;
 	float: right;
 
 	a{
@@ -83,6 +83,13 @@
 
 .main-page-pic{
 	width: 100%;
+}
+
+//FEATURED TITLES
+
+.featured-titles{
+	background-color: $BackgroundColor;
+	height: 10em;
 }
 
 
