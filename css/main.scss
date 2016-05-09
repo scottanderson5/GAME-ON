@@ -12,6 +12,16 @@
 //HEADER
 
 .site-header{
-	background-color: #3AADC8;
+	background-color: $HeaderBackgroundColor;
 	height: 7em;
+	overflow: hidden;
+}
+
+.logo-header-wrap{
+	float: left;
+	padding: 1em;
+}
+
+.logo-header{
+	width: 5em;
 }

@@ -1,0 +1,83 @@
+/*********** GRID LAYOUT ***************/
+$tot-width: 100%;
+$num-col: 12;
+$gut-width: 2%;
+
+$ind-col-width: ($tot-width - ($gut-width * ($num-col - 1))) / $num-col;
+
+@mixin grid($geezy){
+  width: ($geezy * $ind-col-width) + ($gut-width * ($geezy - 1));
+  margin-right: $gut-width;
+  &:last-child {
+    margin-right: auto;
+  }
+}  
+
+/*************** ROW AND COL FOR GRID ***********/
+
+.row {
+    overflow: hidden;
+ }  
+
+.col {
+    margin-bottom: 1em;
+}
+
+
+/***************************************/
+
+
+@media (min-width:600px){
+  .col{
+    margin-bottom: 0;
+  }
+  .col-1 {
+  @include grid(1);
+  }
+
+  .col-2 {
+  @include grid(2);
+  }
+
+  .col-3 {
+  @include grid(3);
+  }
+
+  .col-4 {
+  @include grid(4);
+  }
+  
+  .col-5 {
+  @include grid(5);
+  }
+  
+  .col-6 {
+  @include grid(6);
+  }
+  
+  .col-7 {
+  @include grid(7);
+  }
+  
+  .col-8 {
+  @include grid(8);
+  }
+  
+  .col-9 {
+  @include grid(9);
+  }
+  
+  .col-10 {
+  @include grid(10);
+  }
+  
+  .col-11 {
+  @include grid(11);
+  }
+  
+  .col-12 {
+  @include grid(12);
+  }
+
+	
+}
