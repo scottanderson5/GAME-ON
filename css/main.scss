@@ -90,14 +90,53 @@
 
 .featured-titles{
 	background-color: $BackgroundColor;
-	height: 10em;
+	height: 20em;
 }
+
+.carousel-wrap{
+	margin: 0 auto;
+}
+
+.owl-carousel{
+	margin-top: 3em;
+}
+
+.item{
+	background-color: #bada55;
+}
+
+.owl-nav{
+	overflow: hidden;
+}
+
+.owl-prev{
+	float: left;
+}
+
+.owl-next{
+	float: right;
+}
+
+//FOOTER
+
+.site-footer{
+	background-color: $HeaderBackgroundColor;
+	overflow: hidden;
+	height: 7em;
+}
+
+
+
+
+
+
 
 //CAROUSEL
 
-/* 
- *  Owl Carousel - Animate Plugin
- */
+ 
+  //Owl Carousel - Animate Plugin
+
+
 .owl-carousel .animated {
   -webkit-animation-duration: 1000ms;
   animation-duration: 1000ms;
@@ -134,9 +173,9 @@
   }
 }
 
-/* 
- * 	Owl Carousel - Auto Height Plugin
- */
+ 
+ 	//Owl Carousel - Auto Height Plugin
+ 
 .owl-height {
   -webkit-transition: height 500ms ease-in-out;
   -moz-transition: height 500ms ease-in-out;
@@ -145,14 +184,14 @@
   transition: height 500ms ease-in-out;
 }
 
-/* 
- *  Core Owl Carousel CSS File
- */
+ 
+   //Core Owl Carousel CSS File
+ 
 .owl-carousel {
   display: none;
   width: 100%;
   -webkit-tap-highlight-color: transparent;
-  /* position relative and z-index fix webkit rendering fonts issue */
+  //position relative and z-index fix webkit rendering fonts issue 
   position: relative;
   z-index: 1;
 }
@@ -171,7 +210,7 @@
 .owl-carousel .owl-stage-outer {
   position: relative;
   overflow: hidden;
-  /* fix for flashing background */
+  // fix for flashing background 
   -webkit-transform: translate3d(0px, 0px, 0px);
 }
 .owl-carousel .owl-controls .owl-nav .owl-prev,
@@ -235,14 +274,14 @@
   float: right;
 }
 
-/* No Js */
+//No Js 
 .no-js .owl-carousel {
   display: block;
 }
 
-/* 
- * 	Owl Carousel - Lazy Load Plugin
- */
+ 
+ // 	Owl Carousel - Lazy Load Plugin
+ 
 .owl-carousel .owl-item .owl-lazy {
   opacity: 0;
   -webkit-transition: opacity 400ms ease;
@@ -255,9 +294,9 @@
   transform-style: preserve-3d;
 }
 
-/* 
- * 	Owl Carousel - Video Plugin
- */
+ 
+//  	Owl Carousel - Video Plugin
+ 
 .owl-carousel .owl-video-wrapper {
   position: relative;
   height: 100%;
