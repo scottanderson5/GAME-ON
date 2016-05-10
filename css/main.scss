@@ -33,18 +33,19 @@
 }
 
 .logo-header{
-	width: 13em;
+	width: 12.5em;
 }
 
 .header-nav{
 	font-family: $MainFontFamily;
 	font-weight: $HeaderFontWeight;
+	letter-spacing: $HeaderLetterSpacing;
 	padding: 3em 0em 0em 0em;
 	overflow: hidden;
 	float: left;
 
 	li{
-		color: $MainFontColor;
+		color: $HeaderFontColor;
 		padding: 0em 1.5em 0em 0em;
 		list-style-type: none;
 		float: left;
@@ -67,11 +68,12 @@
 .user-name-header{
 	font-family: $MainFontFamily;
 	font-weight: $HeaderFontWeight;
+	letter-spacing: $HeaderLetterSpacing;
 	padding: 3em 0em 0em 0em;
 	float: right;
 
 	a{
-		color: $MainFontColor;
+		color: $HeaderFontColor;
 		text-decoration: none;
 	}
 
@@ -80,14 +82,172 @@
 	}
 }
 
-//MAIN INTRO PAGE
+//MAIN PAGE
 
 .page-content{
 	background-color: $BackgroundColor;
 }
 
-.main-page-pic{
-	width: 100%;
+//INTRO HEADER
+
+.main-intro-page{
+	background-color: #444444;
+	overflow: hidden;
+}
+
+.container{
+	margin: 0em auto 0em 11em;
+	float: left;
+}
+
+@-webkit-keyframes fadeIn { 
+	from { opacity: 0; } 
+	to { opacity: 1; } 
+}
+
+@-moz-keyframes fadeIn { 
+	from { opacity: 0; } 
+	to { opacity: 1; } 
+}
+
+@keyframes fadeIn { 
+	from { opacity: 0; } 
+	to { opacity: 1; } 
+}
+
+.fade-in{
+	opacity: 0;  
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	 animation:fadeIn ease-in 1;
+
+  	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  	-moz-animation-fill-mode:forwards;
+  	 animation-fill-mode:forwards;
+
+  	-webkit-animation-duration:1s;
+  	-moz-animation-duration:1s;
+  	 animation-duration:1s;
+
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.7s;
+  -moz-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 1.8s;
+  -moz-animation-delay: 1.8s;
+  animation-delay: 1.8s;
+}
+
+.fade-in.three {
+  -webkit-animation-delay: 3.1s;
+  -moz-animation-delay: 3.1s;
+  animation-delay: 3.1s;
+}
+
+.play-text{
+	font-family: $MainFontFamily;
+	font-size: $IntroFontSize;
+	font-weight: $IntroFontWeight;
+	color: $IntroSectionFontColor;
+	margin: 0em auto 0em 2em;
+	padding: 0.5em 0em 0em 0em;
+	width: 11em;
+	text-align: left;
+
+}
+
+.tell-text{
+	font-family: $MainFontFamily;
+	font-size: $IntroFontSize;
+	font-weight: $IntroFontWeight;
+	color: $IntroSectionFontColor;
+	margin: 0em auto 0.4em 3.3em;
+	width: 11em;
+	text-align: left;
+
+}
+
+.game-text{
+	font-family: $MainFontFamily;
+	font-size: $IntroTitleFontSize;
+	font-weight: $IntroTitleFontWeight;
+	color: $IntroSectionGameOnFontColor;
+	margin: 0.5em auto 0em 6em;
+	padding: 0em 0em 1em 0em;
+	width: 6em;
+	text-align: left;
+
+}
+
+.buttons-wrap{
+	overflow: hidden;
+	margin: 4em 0em 0em 4em;
+	padding: 0em 0em 1em 0em;
+	float: left;
+}
+
+%button{
+	height: 5.5em;
+	width: 5.5em;
+	border-radius: 50%;
+	text-align: center;
+
+	li{
+		list-style-type: none;
+		margin: 2.2em 0em 0em 0em;
+	}
+
+}
+
+.buttonA{
+	@extend %button;
+	background-color: $ButtonAColor;
+	border: 4px solid $ButtonARadiusColor;
+	margin: 0em 0.2em 0em 0.1em;
+	float: left;
+
+	a{
+		color: $ButtonAFontColor;
+		text-decoration: none;
+	}
+}
+
+.buttonA:hover{
+	background-color: $ButtonBColor;
+	border: 4px solid $ButtonBRadiusColor;
+
+	a{
+		color: $ButtonBFontColor;
+	}
+}
+
+.buttonB{
+	@extend %button;
+	background-color: $ButtonBColor;
+	border: 4px solid $ButtonBRadiusColor;
+	color: $ButtonBFontColor;
+	margin: 0em 0.1em 0em 0em;
+	float: right;
+
+	a{
+		color: $ButtonBFontColor;
+		text-decoration: none;
+	}
+
+}
+
+.buttonB:hover{
+	background-color: $ButtonAColor;
+	border: 4px solid $ButtonARadiusColor;
+
+	a{
+		color: $ButtonAFontColor;
+	}
 }
 
 //FEATURED TITLES
@@ -209,15 +369,16 @@
 
 .review-wrap{
 	overflow: hidden;
-	background-color: yellow;
 	margin: 8em auto 0em auto;
+	background-color: yellow;
 }
 
 .review-example{
-	background-color: blue;
+	background-color: white;
 	overflow: hidden;
 	height: 35em;
-	margin: 0 auto;
+	padding: 0em 1.5em 0em 1em;
+	margin: 0em 1em 0em 1em;
 	float: left;
 }
 
@@ -226,15 +387,16 @@
 }
 
 .review-example-top-left{
-	float: left;
+	display: inline-block;
+	margin: 0em 0em 0em 1em;
 }
 
 .review-example-top-right{
 	background-color: $BackgroundColor;
 	padding: 0em 0.8em 0em 0.2em;
-	margin: 2em 0em 0em 1em;
+	margin: 0em 0em 2.5em 0.5em;
 	overflow: hidden;
-	float: right;
+	display: inline-block;
 }
 
 .review-example-top-right-left{
@@ -291,6 +453,19 @@
 
 .review-example-bottom{
 
+}
+
+.stars-wrap{
+	border-top: 1.5px solid #F4F4F4;
+	padding: 1em 0em 0em 0em;
+}
+
+.review-text{
+	width: 23em;
+	background-color: blue;
+	text-align: center;
+	line-height: 1.3em;
+	margin: 1em auto;
 }
 
 //FOOTER
