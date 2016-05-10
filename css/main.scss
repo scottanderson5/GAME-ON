@@ -82,6 +82,10 @@
 
 //MAIN INTRO PAGE
 
+.page-content{
+	background-color: $BackgroundColor;
+}
+
 .main-page-pic{
 	width: 100%;
 }
@@ -90,7 +94,14 @@
 
 .featured-titles{
 	background-color: $BackgroundColor;
-	height: 20em;
+}
+
+.featured-titles-name{
+	font-family: $MainFontFamily;
+	font-size: $TitlesIntroFontSize;
+	color: $TitleIntroFontColor;
+	text-align: center;
+	margin: 2em auto 1em auto;
 }
 
 .carousel-wrap{
@@ -98,7 +109,7 @@
 }
 
 .owl-carousel{
-	margin-top: 3em;
+	margin: 1em 0em 3em 0em;
 }
 
 .item{
@@ -110,20 +121,71 @@
 	margin: 1em 0em 0em 0em;
 }
 
-.owl-prev{
-	background-color: #86838D;
+%owl-controls{
+	background-color: $CarouselButtonBackground;
 	color: white;
 	padding: 0.2em;
 	border-radius: 5%;
+}
+
+.owl-prev{
+	@extend %owl-controls;
 	float: left;
 }
 
 .owl-next{
-	background-color: #86838D;
-	color: white;
-	padding: 0.2em;
-	border-radius: 5%;
+	@extend %owl-controls;
 	float: right;
+}
+
+//WORKS SECTION
+
+.works-section{
+	background-color: white;
+	text-align: center;
+}
+
+.works-explained{
+	margin: 1em auto 0em auto;
+	text-align: center;
+	
+}
+
+.step-wrap{
+	display: inline-block;
+	padding: 1em;
+}
+
+.works-arrow{
+	margin: 0em 0em 2.5em 0em;
+	display: inline-block;
+}
+
+%works-explained-name{
+	font-family: $MainFontFamily;
+	font-weight: $SectionsFontWeight;
+	list-style-type: none;
+}
+
+.works-explained-nameA{
+	@extend %works-explained-name;
+
+}
+
+.works-explained-nameB{
+	@extend %works-explained-name;
+
+}
+
+.works-explained-nameC{
+	@extend %works-explained-name;
+
+
+}
+
+.works-explained-nameD{
+	@extend %works-explained-name;
+
 }
 
 //FOOTER
