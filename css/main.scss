@@ -96,11 +96,20 @@
 	background-color: $BackgroundColor;
 }
 
-.featured-titles-name{
+%featured-titles-name{
 	font-family: $MainFontFamily;
 	font-size: $TitlesIntroFontSize;
 	color: $TitleIntroFontColor;
 	text-align: center;
+}
+
+.featured-titles-nameA{
+	@extend %featured-titles-name;
+	margin: 2em auto 2em auto;
+}
+
+.featured-titles-nameB{
+	@extend %featured-titles-name;
 	margin: 2em auto 1em auto;
 }
 
@@ -110,10 +119,6 @@
 
 .owl-carousel{
 	margin: 1em 0em 3em 0em;
-}
-
-.item{
-	//box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3), 0 2px 2px 0 rgba(0, 0, 0, 0.3);
 }
 
 .owl-nav{
@@ -142,23 +147,22 @@
 
 .works-section{
 	background-color: white;
-	text-align: center;
 }
 
 .works-explained{
 	margin: 1em auto 0em auto;
+	padding: 0em 0em 4em 0em;
 	text-align: center;
 	
 }
 
 .step-wrap{
 	display: inline-block;
-	padding: 1em;
 }
 
 .works-arrow{
-	margin: 0em 0em 2.5em 0em;
 	display: inline-block;
+	margin: 0em 0em 5.2em 0em;
 }
 
 %works-explained-name{
@@ -188,6 +192,91 @@
 
 }
 
+.works-explained-description{
+	color: $StepDescriptionFontColor;
+	list-style-type: none;
+	max-width: 15em;
+	margin: 0.3em 0em 0em 0em;
+}
+
+//REVIEW EXAMPLES
+
+.review-page{
+	background-color: $BackgroundColor;
+	height: 45em;
+	text-align: center;
+}
+
+.review-wrap{
+	overflow: hidden;
+	background-color: yellow;
+	margin: 8em auto 0em auto;
+}
+
+.review-example{
+	background-color: blue;
+	overflow: hidden;
+	height: 35em;
+	margin: 0 auto;
+	float: left;
+}
+
+.review-example-top{
+	overflow: hidden;
+}
+
+.review-example-top-left{
+	float: left;
+}
+
+.review-example-top-right{
+	background-color: $BackgroundColor;
+	padding: 0em 0.8em 0em 0.2em;
+	margin: 2em 0em 0em 1em;
+	overflow: hidden;
+	float: right;
+}
+
+.review-example-top-right-left{
+	padding: 0.5em 0em 0em 0em;
+	float: left;
+}
+
+.review-example-top-right-right{
+	overflow: hidden;
+	margin: 1.2em 0em 0em 0em;
+	padding: 0em 0em 0em 0em;
+	list-style-type: none;
+	text-align: left;
+	float: right;
+
+}
+
+.user-info-wrap-status{
+	overflow: hidden;
+}
+
+.user-info-wrap-top{
+	margin: 0em 0em 0em 0.3em;
+}
+
+.status-symbol{
+	float: left;
+}
+
+.symbol-size{
+	width: 1.6em;
+}
+
+.status-description{
+	padding: 0.7em 0em 0em 0em;
+	float: right;
+}
+
+.review-example-bottom{
+
+}
+
 //FOOTER
 
 .site-footer{
@@ -200,7 +289,7 @@
 
 
 
-
+/***************************************************************/
 
 //CAROUSEL
 
