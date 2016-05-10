@@ -260,6 +260,17 @@
 	margin: 0em 0em 0em 0.3em;
 }
 
+.user-info-name{
+	font-family: $MainFontFamily;
+	font-weight: $ReviewUserFontWeight;
+	font-size: $ReviewUserFontSize;
+}
+
+.user-town{
+	font-family: $MainFontFamily;
+	color: $UserTownColor;
+}	
+
 .status-symbol{
 	float: left;
 }
@@ -269,8 +280,13 @@
 }
 
 .status-description{
+	font-family: $MainFontFamily;
 	padding: 0.7em 0em 0em 0em;
 	float: right;
+}
+
+.status-color{
+	color: $StatusColor;
 }
 
 .review-example-bottom{
