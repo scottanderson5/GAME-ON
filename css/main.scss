@@ -368,8 +368,7 @@
 .works-explained{
 	margin: 1em auto 0em auto;
 	padding: 0em 0em 4em 0em;
-	text-align: center;
-	
+	text-align: center;	
 }
 
 .step-wrap{
@@ -586,12 +585,29 @@
 
 //PROGRESS TRACKER
 
+.works-explained-profile{
+	margin: 2em auto 0em auto;
+	padding: 0em 0em 4em 0em;
+	text-align: center;
+	
+}
+
+.step-wrap-profile{
+	display: inline-block;
+	margin: 0 auto 1em auto;
+
+}
+
 .step-sizing-profile{
 	width: 8em;
 }
 
 .works-arrow-profile{
-	margin: 1em 0em 0em 0em;
+	margin: 1em 0em 1.5em 0em;
+}
+
+.works-arrow-profileB{
+	margin: 0em 0em 4.5em 0em;
 }
 
 //FOOTER
