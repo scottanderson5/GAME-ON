@@ -634,6 +634,56 @@
 	}
 }
 
+//DASHBOARD MAIN CONTENT
+
+.profile-main{
+	background-color: white;
+}
+
+.dashboard-wrap{
+	overflow: hidden;
+	margin: 0 auto 4em auto;
+}
+
+.user-reviews-wrap{
+	border: 1px solid $BorderColor;
+	height: 30em;
+	margin: 0 auto;
+	float: left;
+}
+
+.user-reviews-top{
+	background-color: $UserBoxesHeadersColor;
+	font-family: $MainFontFamily;
+	font-size: $DashboardColumnHeadersFontSize;
+	font-weight: $DashboardColumnHeadersFontWeight;
+	width: 100%;
+	text-align: center;
+	padding: 1em 0em 1em 0em;
+}
+
+.user-reviews-bottom{
+	background-color: $BackgroundColor;
+}
+
+.user-details-wrap{
+	float: right;
+}
+
+.user-details-status{
+	border: 1px solid $BorderColor;
+	background-color: $BackgroundColor;
+	height: 12em;
+}
+
+.user-reviews-friends{
+	border: 1px solid $BorderColor;
+	background-color: $BackgroundColor;
+	height: 12em;
+	margin: 1em 0em 0em 0em;
+}
+
+
 //FOOTER
 
 .site-footer{
