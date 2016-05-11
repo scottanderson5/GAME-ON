@@ -661,7 +661,6 @@
 
 .user-reviews-wrap{
 	border: 1px solid $BorderColor;
-	height: 30em;
 	margin: 0 auto;
 	float: left;
 }
@@ -714,6 +713,7 @@
 
 .review-date{
 	font-family: $MainFontFamily;
+	font-weight: $DashboardColumnTextFontWeight;
 	border-bottom: 1px solid $BorderColor;
 	padding: 0.5em 0.1em 0.3em 0.1em;
 	width: 10em;
@@ -721,7 +721,36 @@
 
 .single-user-review{
 	font-family: $MainFontFamily;
+	font-weight: $DashboardColumnTextFontWeight;
 	margin: 0.5em 0em 0em 0em;
+}
+
+.stars-review{
+	width: 10em;
+	margin: 0.5em 0em 0em 0em;
+}
+
+.single-ratings-wrap{
+	overflow: hidden;
+	padding: 0em 0.2em 0em 0.2em;
+}
+
+.ratings-names{
+	list-style-type: none;
+	float: left;
+
+	li{
+		line-height: 1.7em;
+	}
+}
+
+.ratings-numbers{
+	list-style-type: none;
+	float: right;
+
+	li{
+		line-height: 1.7em;
+	}
 }
 
 //FOOTER
