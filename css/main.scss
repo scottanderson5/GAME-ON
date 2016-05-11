@@ -846,31 +846,57 @@
 	font-size: $RequestFormHeaderFontSize;
 	font-weight: $RequestFormHeaderFontWeight;
 	padding: 1em 0em 1em 0em;
+	margin: 0em 0em 2em 0em;
 	text-align: center;
 }
 
 .request-form-wrap{
 	background-color: $BackgroundColor;
-	border: 1px solid $RequestFormBorderColor;
-	padding: 0em 0em 3em 0em;
+	padding: 0em 0em 1em 0em;
 }
 
 .request-question{
 	background-color: $RequestQuestionHeaderColor;
 	font-weight: $RequestQuestionFontWeight;
 	letter-spacing: $RequestQuestionLetterSpacing;
-	width: 75%;
+	width: 40%;
 	padding: 0.5em;
-	margin: 4em auto 0em auto;
+	margin: 2em auto 0em auto;
+}
+
+%request-form-answers{
+	background-color: white;
+	margin: 0 auto;
+	width: 40%;
+	padding: 0.5em;
+	overflow: hidden;
 }
 
 .request-form-answers{
-	background-color: white;
-	margin: 0 auto;
-	width: 75%;
-	padding: 0.5em;
+	@extend %request-form-answers;
 	border-bottom: 1px solid $RequestFormBorderColor;
 }
+
+.request-form-answers-last{
+	@extend %request-form-answers;
+}
+
+.answer{
+	float: left;
+	margin: 0.05em 0em 0em 0.5em;
+}
+
+.answer-choice{
+	margin: 0em 0em 0em 0em;
+	float: left;
+}
+
+.choice{
+	width: 1em;
+	margin: 0.05em 0em 0em 0em;
+}
+
+
 
 
 
