@@ -830,7 +830,12 @@
 
 /************************ REQUEST PAGE ****************************/
 
+.request-body{
+	background-color: white;
+}
+
 .request-form-main{
+	background-color: $BackgroundColor;
 	border: 1px solid $BorderColor;
 	margin: 3em auto 3em auto;
 }
@@ -844,14 +849,27 @@
 	text-align: center;
 }
 
-.request-body{
+.request-form-wrap{
 	background-color: $BackgroundColor;
+	border: 1px solid $RequestFormBorderColor;
+	padding: 0em 0em 3em 0em;
 }
 
 .request-question{
-	background-color: #838383;
+	background-color: $RequestQuestionHeaderColor;
+	font-weight: $RequestQuestionFontWeight;
+	letter-spacing: $RequestQuestionLetterSpacing;
 	width: 75%;
-	margin: 2em auto;
+	padding: 0.5em;
+	margin: 4em auto 0em auto;
+}
+
+.request-form-answers{
+	background-color: white;
+	margin: 0 auto;
+	width: 75%;
+	padding: 0.5em;
+	border-bottom: 1px solid $RequestFormBorderColor;
 }
 
 
