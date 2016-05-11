@@ -447,15 +447,29 @@
 	margin: 2em auto 0em auto;
 }
 
-.review-example{
+%review-example{
 	background-color: $ReviewExampleBackgroundColor;
 	border: 1px solid $BorderColor;
 	overflow: hidden;
 	padding: 0em 1em 0em 1em;
 	margin: 0em 1em 3em 1em;
+}
+
+.review-exampleA{
+	@extend %review-example;
 
 	@media (min-width: 900px){
 		float: left;
+		margin: 0em 1em 0em 1em;
+		padding: 0em 1.5em 0em 1em;
+	}	
+}
+
+.review-exampleB{
+	@extend %review-example;
+
+	@media (min-width: 900px){
+		float: right;
 		margin: 0em 1em 0em 1em;
 		padding: 0em 1.5em 0em 1em;
 	}	
@@ -683,6 +697,32 @@
 	margin: 1em 0em 0em 0em;
 }
 
+.single-review-wrap{
+	overflow: hidden;
+	padding: 1em 0em 0em 0em;
+}
+
+.single-review-wrap-picture{
+	float: left;
+	margin: 0em 0em 0em 1em;
+}
+
+.single-review-wrap-info{
+	float: left;
+	margin: 0em 0em 0em 1em;
+}
+
+.review-date{
+	font-family: $MainFontFamily;
+	border-bottom: 1px solid $BorderColor;
+	padding: 0.5em 0.1em 0.3em 0.1em;
+	width: 10em;
+}
+
+.single-user-review{
+	font-family: $MainFontFamily;
+	margin: 0.5em 0em 0em 0em;
+}
 
 //FOOTER
 
