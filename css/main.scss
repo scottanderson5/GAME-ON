@@ -593,21 +593,45 @@
 }
 
 .step-wrap-profile{
+	display: none;
+	margin: 0 auto 1em auto;
+
+	@media (min-width: 900px){
+		display: inline-block;
+	}
+
+}
+
+.step-wrap-profileB{
 	display: inline-block;
 	margin: 0 auto 1em auto;
 
 }
 
 .step-sizing-profile{
-	width: 8em;
+	width: 13em;
+
+	@media (min-width: 900px){
+		width: 8em;
+	}
 }
 
 .works-arrow-profile{
+	display: none;
 	margin: 1em 0em 1.5em 0em;
+
+	@media (min-width: 900px){
+		display: inline-block;
+	}
 }
 
 .works-arrow-profileB{
+	display: none;
 	margin: 0em 0em 4.5em 0em;
+
+	@media (min-width: 900px){
+		display: inline-block;
+	}
 }
 
 //FOOTER
