@@ -614,6 +614,11 @@
 	display: none;
 	margin: 0 auto 1em auto;
 
+	a{
+		color: $MainFontColor;
+		text-decoration: none;
+	}
+
 	@media (min-width: 900px){
 		display: inline-block;
 	}
@@ -636,7 +641,7 @@
 
 .works-arrow-profile{
 	display: none;
-	margin: 1em 0em 1.5em 0em;
+	margin: 1em 0.5em 1.5em 0em;
 
 	@media (min-width: 900px){
 		display: inline-block;
@@ -667,8 +672,12 @@
 
 .user-reviews-wrap{
 	border: 1px solid $BorderColor;
+	width: 24em;
 	margin: 0 auto;
-	float: left;
+
+	@media (min-width: 900px){
+		float: left;
+	}
 }
 
 .user-reviews-top{
@@ -750,7 +759,13 @@
 //CURRENT STATUS
 
 .user-details-wrap{
-	float: right;
+	width: 22em;
+	margin: 1em auto;
+
+	@media (min-width: 900px){
+		margin: 0;
+		float: right;
+	}
 }
 
 .user-details-status{
@@ -785,12 +800,63 @@
 .user-reviews-friends{
 	border: 1px solid $BorderColor;
 	background-color: $BackgroundColor;
-	height: 12em;
 	margin: 1em 0em 0em 0em;
 }
 
+.friends-wrap{
+	padding: 0em 0em 0em 3em;
+	overflow-y: auto;
+	height: 18.2em;
+}
 
-//FOOTER
+.friends-list-item{
+	background-color: $BackgroundColor;
+	padding: 0em 0.8em 0em 0.2em;
+	margin: 1em 0em 1em 0.5em;
+	overflow: hidden;
+	display: inline-block;
+
+}
+
+.friend-info-wrap{
+	overflow: hidden;
+	margin: 1.2em 0em 0em 1em;
+	padding: 0em 0em 0em 0em;
+	list-style-type: none;
+	text-align: left;
+	float: right;
+
+}
+
+/************************ REQUEST PAGE ****************************/
+
+.request-form-main{
+	border: 1px solid $BorderColor;
+	margin: 3em auto 3em auto;
+}
+
+.request-header{
+	background-color: $RequestFormHeaderColor;
+	font-family: $MainFontFamily;
+	font-size: $RequestFormHeaderFontSize;
+	font-weight: $RequestFormHeaderFontWeight;
+	padding: 1em 0em 1em 0em;
+	text-align: center;
+}
+
+.request-body{
+	background-color: $BackgroundColor;
+}
+
+.request-question{
+	width: 75%;
+	background-color: yellow;
+	margin: 2em auto;
+}
+
+
+
+/************************* FOOTER *********************************/
 
 .site-footer{
 	background-color: $FooterBackgroundColor;
