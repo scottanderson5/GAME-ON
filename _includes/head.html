@@ -6,7 +6,7 @@
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <link rel="stylesheet" href="{{ "/css/normalize.css" }}">
+  <link rel="stylesheet" href="{{ "/css/normalize.css"  | prepend: site.baseurl }}">
 
   <!--<link rel="shortcut icon" href="/Assets/GameOn-Logo.gif" sizes="16x16">-->
 
