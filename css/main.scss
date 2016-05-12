@@ -34,10 +34,6 @@
 
 .header-menu{
 	float: right;
-
-	/*@media (min-width: 900px){
-		display: none;
-	}*/
 }
 
 .menu-icon{
@@ -55,30 +51,40 @@
 
 }
 
+.header-menu-wrap{
+	float: right;
+}
+
+.header-nav-wrap{
+	overflow: hidden;
+}
+
 .header-nav{
 	display: none;
+	background-color: $HeaderBackgroundColor;
 	font-family: $MainFontFamily;
 	font-weight: $HeaderFontWeight;
 	letter-spacing: $HeaderLetterSpacing;
-	padding: 3em 0em 0em 0em;
+	padding: 1em;
 	overflow: hidden;
-	float: left;
+	position: absolute;
+	z-index: 10;
+	transform: translate(66em, 0);
+
+	a{
+		text-decoration: none;
+	}
 
 	li{
 		color: $HeaderFontColor;
 		padding: 0em 1.5em 0em 0em;
 		list-style-type: none;
-		float: left;
+		line-height: 1.5em;
 	}
 
 	li:hover{
 		text-decoration: underline;
 	}
-
-	/*@media (min-width: 900px){
-		display: block;
-		
-	}*/
 }
 
 .pic-header-wrap{
@@ -88,43 +94,6 @@
 
 .pic-header{
 	width: 4em;
-}
-
-.user-name-header{
-	font-family: $MainFontFamily;
-	font-weight: $HeaderFontWeight;
-	letter-spacing: $HeaderLetterSpacing;
-	padding: 3em 0em 0em 0em;
-	float: right;
-
-	a{
-		color: $HeaderFontColor;
-		text-decoration: none;
-	}
-
-	a:hover{
-		text-decoration: underline;
-	}
-}
-
-.header-next{
-	background-color: #3F4446;
-	padding: 1em 1em 1em 1em;
-	list-style-type: none;
-	text-align: center;
-
-	a{
-		text-decoration: none;
-	}
-
-	li{
-		font-family: $MainFontFamily;
-		font-weight: $HeaderFontWeight;
-		letter-spacing: $HeaderLetterSpacing;
-		color: white;
-		margin: 0em 1em 0em 0em;
-		display: inline-block;
-	}
 }
 
 //MAIN PAGE
@@ -138,6 +107,7 @@
 .main-intro-page{
 	background-color: $MainIntroPageBackgroundColor;
 	overflow: hidden;
+	position: absolute;
 }	
 
 
@@ -329,6 +299,7 @@
 
 .featured-titles{
 	background-color: $BackgroundColor;
+	margin: 13em 0em 0em 0em;
 }
 
 %featured-titles-name{
