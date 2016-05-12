@@ -41,6 +41,10 @@
 	padding: 2em 1em 0em 0em;
 }
 
+.menu-icon:hover{
+	width: 4.15em;
+}
+
 .logo-header-wrap{
 	padding: 1.7em 1em 1em 1em;
 	float: left;
@@ -61,6 +65,7 @@
 
 .header-nav{
 	display: none;
+	border-radius: 0.3em;
 	background-color: $HeaderBackgroundColor;
 	font-family: $MainFontFamily;
 	font-weight: $HeaderFontWeight;
@@ -69,8 +74,7 @@
 	overflow: hidden;
 	position: absolute;
 	z-index: 10;
-	transform: translate(66em, 0);
-
+	right: 1em;
 	a{
 		text-decoration: none;
 	}
@@ -80,10 +84,22 @@
 		padding: 0em 1.5em 0em 0em;
 		list-style-type: none;
 		line-height: 1.5em;
+
+		@media (min-width: 600px){
+			display: inline-block;
+		}
 	}
 
 	li:hover{
 		text-decoration: underline;
+	}
+
+	@media (min-width: 600px){
+		right: 1em;
+	}
+
+	@media (min-width: 900px){
+		right: 3em;
 	}
 }
 
@@ -107,6 +123,7 @@
 .main-intro-page{
 	background-color: $MainIntroPageBackgroundColor;
 	overflow: hidden;
+	width: 100%;
 	position: absolute;
 }	
 

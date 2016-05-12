@@ -1,4 +1,4 @@
 $('.header-menu').click(function(){
-  $('.header-nav').slideToggle(1000);
+  $('.header-nav').slideToggle(500);
 });
 
