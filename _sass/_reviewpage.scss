@@ -28,17 +28,34 @@
 	background-color: $RequestQuestionHeaderColor;
 	font-weight: $RequestQuestionFontWeight;
 	letter-spacing: $RequestQuestionLetterSpacing;
-	width: 50%;
+	line-height: 1.6em;
+	width: 85%;
 	padding: 0.5em;
 	margin: 2em auto 0em auto;
+
+	@media (min-width: 600px){
+		width: 65%;
+	}
+
+	@media (min-width: 900px){
+		width: 50%;
+	}
 }
 
 %review-form-answers{
 	background-color: white;
-	width: 50%;
+	width: 85%;
 	padding: 0.5em;
 	overflow: hidden;
 	margin: 0 auto;
+
+	@media (min-width: 600px){
+		width: 65%;
+	}
+
+	@media (min-width: 900px){
+		width: 50%;
+	}
 }
 
 .review-form-answers{
@@ -53,23 +70,47 @@
 }
 
 .review-answer-wrap{
-	margin: 0em 5em 0em 0em;
+	margin: 0em 0.2em 0em 0em;
 	float: right;
+
+	@media (min-width: 600px){
+		margin: 0em 6.8em 0em 0em;
+	}
+
+	@media (min-width: 900px){
+		margin: 0em 5em 0em 0em;
+	}
 }
 
 .review-answerA{
 	display: inline-block;
-	margin: 0.05em 0em 0em 3.5em;
+	margin: 0.05em 0em 0em 2em;
+
+	@media (min-width: 900px){
+		margin: 0.05em 0em 0em 3.5em;
+	}
+}
+
+.checkboxes-wrap{
+	margin: 0em 0em 0em 0em;
+	float: right;
+
+	@media (min-width: 600px){
+		margin: 0em 6.5em 0em 0em;
+	}
+
+	@media (min-width: 900px){
+		margin: 0em 4.8em 0em 0em;
+	}
 }
 
 .review-answerB{
 	display: inline-block;
-	margin: 0.05em 0em 0em 3.2em;
-}
+	margin: 0.05em 0em 0em 1.7em;
 
-.checkboxes-wrap{
-	margin: 0em 4.8em 0em 0em;
-	float: right;
+	@media (min-width: 900px){
+		margin: 0.05em 0em 0em 3.2em;
+	}
 }
 
 .answer-choice{

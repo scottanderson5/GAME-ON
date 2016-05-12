@@ -35,17 +35,35 @@
 	background-color: $RequestQuestionHeaderColor;
 	font-weight: $RequestQuestionFontWeight;
 	letter-spacing: $RequestQuestionLetterSpacing;
-	width: 40%;
+	line-height: 1.6em;
+	width: 80%;
 	padding: 0.5em;
 	margin: 2em auto 0em auto;
+
+	@media (min-width: 600px){
+		width: 50%;
+	}
+
+	@media (min-width: 900px){
+		width: 40%;
+	}	
+
 }
 
 %request-form-answers{
 	background-color: white;
 	margin: 0 auto;
-	width: 40%;
+	width: 80%;
 	padding: 0.5em;
 	overflow: hidden;
+
+	@media (min-width: 600px){
+		width: 50%;
+	}
+
+	@media (min-width: 900px){
+		width: 40%;
+	}
 }
 
 .request-form-answers{
