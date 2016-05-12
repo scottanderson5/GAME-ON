@@ -35,14 +35,14 @@
 .header-menu{
 	float: right;
 
-	@media (min-width: 900px){
+	/*@media (min-width: 900px){
 		display: none;
-	}
+	}*/
 }
 
 .menu-icon{
 	width: 4em;
-	padding: 2em 2em 0em 0em;
+	padding: 2em 1em 0em 0em;
 }
 
 .logo-header-wrap{
@@ -75,14 +75,14 @@
 		text-decoration: underline;
 	}
 
-	@media (min-width: 900px){
+	/*@media (min-width: 900px){
 		display: block;
 		
-	}
+	}*/
 }
 
 .pic-header-wrap{
-	padding: 1.3em 1em 1em 1em;
+	padding: 1.3em 1em 1em 0.5em;
 	float: right;
 }
 
@@ -104,6 +104,26 @@
 
 	a:hover{
 		text-decoration: underline;
+	}
+}
+
+.header-next{
+	background-color: #3F4446;
+	padding: 1em 1em 1em 1em;
+	list-style-type: none;
+	text-align: center;
+
+	a{
+		text-decoration: none;
+	}
+
+	li{
+		font-family: $MainFontFamily;
+		font-weight: $HeaderFontWeight;
+		letter-spacing: $HeaderLetterSpacing;
+		color: white;
+		margin: 0em 1em 0em 0em;
+		display: inline-block;
 	}
 }
 
