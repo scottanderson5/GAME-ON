@@ -1,0 +1,244 @@
+
+@import "colors";
+@import	"fonts";
+@import "grid";	
+
+
+
+/******************* PROFILE PAGE ******************************/
+
+
+.profile-main{
+	padding: 0em 0em 3em 0em;
+}
+
+.main-profile-page{
+	background-color: $ProfileBackgroundColor;
+}
+
+//PROGRESS TRACKER
+
+.works-explained-profile{
+	margin: 2em auto 0em auto;
+	padding: 0em 0em 4em 0em;
+	text-align: center;
+	
+}
+
+.step-wrap-profile{
+	display: none;
+	margin: 0 auto 1em auto;
+
+	a{
+		color: $MainFontColor;
+		text-decoration: none;
+	}
+
+	@media (min-width: 900px){
+		display: inline-block;
+	}
+
+}
+
+.step-wrap-profileB{
+	display: inline-block;
+	margin: 0 auto 1em auto;
+
+}
+
+.step-sizing-profile{
+	width: 13em;
+
+	@media (min-width: 900px){
+		width: 8em;
+	}
+}
+
+.works-arrow-profile{
+	display: none;
+	margin: 1em 0.5em 1.5em 0em;
+
+	@media (min-width: 900px){
+		display: inline-block;
+	}
+}
+
+.works-arrow-profileB{
+	display: none;
+	margin: 0em 0em 4.5em 0em;
+
+	@media (min-width: 900px){
+		display: inline-block;
+	}
+}
+
+//DASHBOARD MAIN CONTENT
+
+.profile-main{
+	background-color: white;
+}
+
+.dashboard-wrap{
+	overflow: hidden;
+	margin: 0 auto 4em auto;
+}
+
+//RECENT REVIEWS
+
+.user-reviews-wrap{
+	border: 1px solid $BorderColor;
+	width: 24em;
+	margin: 0 auto;
+
+	@media (min-width: 900px){
+		float: left;
+	}
+}
+
+.user-reviews-top{
+	background-color: $UserBoxesHeadersColor;
+	font-family: $MainFontFamily;
+	font-size: $DashboardColumnHeadersFontSize;
+	font-weight: $DashboardColumnHeadersFontWeight;
+	width: 100%;
+	text-align: center;
+	padding: 1em 0em 1em 0em;
+}
+
+.user-reviews-bottom{
+	background-color: $BackgroundColor;
+	padding: 0em 1em 1em 0em;
+}
+
+.single-review-wrap{
+	overflow: hidden;
+	padding: 1em 0em 0em 0em;
+}
+
+.single-review-wrap-picture{
+	float: left;
+	margin: 0em 0em 0em 1em;
+}
+
+.single-review-wrap-picture-sizing{
+	width: 10em;
+}
+
+.single-review-wrap-info{
+	float: left;
+	margin: 0em 0em 0em 1em;
+}
+
+.review-date{
+	font-family: $MainFontFamily;
+	font-weight: $DashboardColumnTextFontWeight;
+	border-bottom: 1px solid $BorderColor;
+	padding: 0.5em 0.1em 0.3em 0.1em;
+	width: 10em;
+}
+
+.single-user-review{
+	font-family: $MainFontFamily;
+	font-weight: $DashboardColumnTextFontWeight;
+	margin: 0.5em 0em 0em 0em;
+}
+
+.stars-review{
+	width: 10em;
+	margin: 0.5em 0em 0em 0em;
+}
+
+.single-ratings-wrap{
+	overflow: hidden;
+	padding: 0em 0.3em 0em 0.2em;
+}
+
+.ratings-names{
+	list-style-type: none;
+	float: left;
+
+	li{
+		line-height: 1.7em;
+	}
+}
+
+.ratings-numbers{
+	list-style-type: none;
+	float: right;
+
+	li{
+		line-height: 1.7em;
+	}
+}
+
+//CURRENT STATUS
+
+.user-details-wrap{
+	width: 22em;
+	margin: 1em auto;
+
+	@media (min-width: 900px){
+		margin: 0;
+		float: right;
+	}
+}
+
+.user-details-status{
+	border: 1px solid $BorderColor;
+	background-color: $BackgroundColor;
+	height: 12em;
+}
+
+.user-status-description{
+	list-style-type: none;
+	text-align: center;
+	padding: 1.5em 3em 3em 4em;
+	float: left;
+}
+
+.user-li-status{
+	color: $StatusColor;
+	font-size: 48px;
+}
+
+.user-status-pic{
+	float: left;
+	padding: 0.3em 0em 0em 0em;
+}
+
+.largeking{
+	width: 3.1em;
+}
+
+//USER FRIENDS
+
+.user-reviews-friends{
+	border: 1px solid $BorderColor;
+	background-color: $BackgroundColor;
+	margin: 1em 0em 0em 0em;
+}
+
+.friends-wrap{
+	padding: 0em 0em 0em 3em;
+	overflow-y: auto;
+	height: 18.2em;
+}
+
+.friends-list-item{
+	background-color: $BackgroundColor;
+	padding: 0em 0.8em 0em 0.2em;
+	margin: 1em 0em 1em 0.5em;
+	overflow: hidden;
+	display: inline-block;
+
+}
+
+.friend-info-wrap{
+	overflow: hidden;
+	margin: 1.2em 0em 0em 1em;
+	padding: 0em 0em 0em 0em;
+	list-style-type: none;
+	text-align: left;
+	float: right;
+
+}

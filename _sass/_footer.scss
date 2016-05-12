@@ -1,0 +1,12 @@
+@import "colors";
+@import	"fonts";
+@import "grid";	
+
+/************************* FOOTER *********************************/
+
+.site-footer{
+	background-color: $FooterBackgroundColor;
+	overflow: hidden;
+	height: 7em;
+}
+

@@ -1,0 +1,106 @@
+@import "colors";
+@import	"fonts";
+@import "grid";	
+
+//HEADER
+
+.site-header{
+	background-color: $HeaderBackgroundColor;
+	overflow: hidden;
+}
+
+.left-header-overflow-wrap{
+	overflow: hidden;
+	float: left;
+}
+
+.right-header-overflow-wrap{
+	display: none;
+	overflow: hidden;
+	float: right;
+
+	@media (min-width: 900px){
+		display: block;
+	}
+}
+
+.header-menu{
+	float: right;
+}
+
+.menu-icon{
+	width: 4em;
+	padding: 2em 1em 0em 0em;
+}
+
+.menu-icon:hover{
+	width: 4.15em;
+}
+
+.logo-header-wrap{
+	padding: 1.7em 1em 1em 1em;
+	float: left;
+}
+
+.logo-header{
+	width: 12.5em;
+
+}
+
+.header-menu-wrap{
+	float: right;
+}
+
+.header-nav-wrap{
+	overflow: hidden;
+}
+
+.header-nav{
+	display: none;
+	border-radius: 0.3em;
+	background-color: $HeaderBackgroundColor;
+	font-family: $MainFontFamily;
+	font-weight: $HeaderFontWeight;
+	letter-spacing: $HeaderLetterSpacing;
+	padding: 1em;
+	overflow: hidden;
+	position: absolute;
+	z-index: 10;
+	right: 1em;
+	a{
+		text-decoration: none;
+	}
+
+	li{
+		color: $HeaderFontColor;
+		padding: 0em 1.5em 0em 0em;
+		list-style-type: none;
+		line-height: 1.5em;
+
+		@media (min-width: 600px){
+			display: inline-block;
+		}
+	}
+
+	li:hover{
+		text-decoration: underline;
+	}
+
+	@media (min-width: 600px){
+		right: 1em;
+	}
+
+	@media (min-width: 900px){
+		right: 3em;
+	}
+}
+
+.pic-header-wrap{
+	padding: 1.3em 1em 1em 0.5em;
+	float: right;
+}
+
+.pic-header{
+	width: 4em;
+}
+

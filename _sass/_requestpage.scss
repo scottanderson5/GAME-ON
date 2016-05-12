@@ -1,0 +1,109 @@
+@import "colors";
+@import	"fonts";
+@import "grid";	
+
+
+/************************ REQUEST PAGE ****************************/
+
+.request-body{
+	background-color: white;
+	padding: 0em 0em 3em 0em;
+}
+
+.request-form-main{
+	background-color: $BackgroundColor;
+	border: 1px solid $BorderColor;
+	margin: 3em auto 3em auto;
+}
+
+.request-header{
+	background-color: $RequestFormHeaderColor;
+	font-family: $MainFontFamily;
+	font-size: $RequestFormHeaderFontSize;
+	font-weight: $RequestFormHeaderFontWeight;
+	padding: 1em 0em 1em 0em;
+	margin: 0em 0em 2em 0em;
+	text-align: center;
+}
+
+.request-form-wrap{
+	background-color: $BackgroundColor;
+	padding: 0em 0em 1em 0em;
+}
+
+.request-question{
+	background-color: $RequestQuestionHeaderColor;
+	font-weight: $RequestQuestionFontWeight;
+	letter-spacing: $RequestQuestionLetterSpacing;
+	width: 40%;
+	padding: 0.5em;
+	margin: 2em auto 0em auto;
+}
+
+%request-form-answers{
+	background-color: white;
+	margin: 0 auto;
+	width: 40%;
+	padding: 0.5em;
+	overflow: hidden;
+}
+
+.request-form-answers{
+	@extend %request-form-answers;
+	border-bottom: 1px solid $RequestFormBorderColor;
+}
+
+.request-form-answers-last{
+	@extend %request-form-answers;
+}
+
+.answer{
+	float: left;
+	margin: 0.05em 0em 0em 0.5em;
+}
+
+.answer-choice{
+	margin: 0em 0em 0em 0em;
+	float: left;
+}
+
+.request-button-wrap-holder{
+	overflow: hidden;
+	width: 75%;
+	margin: 2em 0 2em 0;
+}
+
+.request-button-wrap{
+	float: right;
+}
+
+.request-button{
+	background-color: $ButtonAColor;
+	border: 4px solid $ButtonARadiusColor;
+	margin: 0em 0.2em 0em 0.1em;
+	height: 4.5em;
+	width: 4.5em;
+	border-radius: 50%;
+	text-align: center;
+
+	a{
+		color: $ButtonAFontColor;
+		text-decoration: none;
+	}
+
+	li{
+		list-style-type: none;
+		margin: 1.9em 0em 0em 0em;
+		font-size: 0.9em;
+	}
+
+}
+
+.request-button:hover{
+	background-color: $ButtonBColor;
+	border: 4px solid $ButtonBRadiusColor;
+
+	a{
+		color: $ButtonBFontColor;
+	}
+}

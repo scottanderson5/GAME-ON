@@ -1,0 +1,86 @@
+@import "colors";
+@import	"fonts";
+@import "grid";	
+
+
+
+
+
+//WORKS SECTION
+
+.works-section{
+	background-color: white;
+}
+
+.works-explained{
+	margin: 1em auto 0em auto;
+	padding: 0em 0em 4em 0em;
+	text-align: center;	
+
+	@media (min-width: 900px){
+		width: 1350px;
+	}
+}
+
+.step-wrap{
+	display: block;
+	width: 20em;
+	margin: 0 auto 1em auto;
+
+	@media (min-width: 900px){
+		display: inline-block;
+		margin: 0 auto;
+		width: 15em;
+	}
+}
+
+.works-arrow{
+	display: none;
+	margin: 0em 0em 5.2em 0em;
+
+	@media (min-width: 900px){
+		display: inline-block;
+	}
+}
+
+.step-sizing{
+	width: 10em;
+}
+
+%works-explained-name{
+	font-family: $MainFontFamily;
+	font-weight: $SectionsFontWeight;
+	list-style-type: none;
+}
+
+.works-explained-nameA{
+	@extend %works-explained-name;
+
+}
+
+.works-explained-nameB{
+	@extend %works-explained-name;
+
+}
+
+.works-explained-nameC{
+	@extend %works-explained-name;
+
+
+}
+
+.works-explained-nameD{
+	@extend %works-explained-name;
+
+}
+
+.works-explained-description{
+	color: $StepDescriptionFontColor;
+	list-style-type: none;
+	max-width: 20em;
+	margin: 0.3em auto 0em auto;
+
+	@media (min-width: 900px){
+		width: 13em;
+	}
+}

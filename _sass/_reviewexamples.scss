@@ -1,0 +1,160 @@
+@import "colors";
+@import	"fonts";
+@import "grid";	
+
+
+//REVIEW EXAMPLES
+
+.review-page{
+	background-color: $BackgroundColor;
+	text-align: center;
+	padding: 0em 0em 5em 0em;
+}
+
+.review-wrap{
+	overflow: hidden;
+	margin: 2em auto 0em auto;
+}
+
+%review-example{
+	background-color: $ReviewExampleBackgroundColor;
+	border: 1px solid $BorderColor;
+	overflow: hidden;
+	padding: 0em 1em 0em 1em;
+	margin: 0em 1em 3em 1em;
+}
+
+.review-exampleA{
+	@extend %review-example;
+
+	@media (min-width: 900px){
+		float: left;
+		margin: 0em 1em 0em 1em;
+		padding: 0em 1.5em 0em 1em;
+	}	
+}
+
+.review-exampleB{
+	@extend %review-example;
+
+	@media (min-width: 900px){
+		float: right;
+		margin: 0em 1em 0em 1em;
+		padding: 0em 1.5em 0em 1em;
+	}	
+}
+
+.review-example-top{
+	overflow: hidden;
+}
+
+.review-example-top-right{
+	display: inline-block;
+	margin: 0em 0em 0em 1em;
+}
+
+.review-example-top-left{
+	background-color: $BackgroundColor;
+	padding: 0em 0.8em 0em 0.2em;
+	margin: 1em 0em 1em 0.5em;
+	overflow: hidden;
+	display: inline-block;
+
+	@media (min-width: 600px){
+		margin: 0em 0em 2.5em 0.5em;
+	}
+}
+
+.review-example-top-right-left{
+	padding: 0.5em 0em 0em 0em;
+	float: left;
+}
+
+.review-example-top-right-right{
+	overflow: hidden;
+	margin: 1.2em 0em 0em 0em;
+	padding: 0em 0em 0em 0em;
+	list-style-type: none;
+	text-align: left;
+	float: right;
+
+}
+
+.user-info-wrap-status{
+	overflow: hidden;
+}
+
+.user-info-wrap-top{
+	margin: 0em 0em 0em 0.3em;
+}
+
+.user-info-name{
+	font-family: $MainFontFamily;
+	font-weight: $ReviewUserFontWeight;
+	font-size: $ReviewUserFontSize;
+}
+
+.user-town{
+	font-family: $MainFontFamily;
+	color: $UserTownColor;
+}	
+
+.status-symbol{
+	float: left;
+}
+
+.k-symbol-size{
+	width: 1.5em;
+}
+
+.b-symbol-size{
+	width: 1.6em;
+	margin: 0.3em 0em 0em 0em;
+}
+
+.status-description{
+	font-family: $MainFontFamily;
+	padding: 0.7em 0em 0em 0em;
+	float: left;
+}
+
+.status-color{
+	color: $StatusColor;
+}
+
+.stars-wrap{
+	border-top: 1.5px solid #F4F4F4;
+	padding: 1em 0em 0em 0em;
+}
+
+.review-text{
+	width: 80%;
+	text-align: center;
+	line-height: 1.3em;
+	margin: 1em auto;
+
+	@media (min-width: 600px){
+		width: 23em;
+	}
+}
+
+.review-ratings{
+
+	margin: 1.5em 0em 0em 0em;
+
+	li{
+		font-weight: 600;
+		list-style-type: none;
+		display: inline-block;
+		margin: 0 0.3em;
+		font-size: 0.8em;
+	}
+
+	@media (min-width: 600px){
+		
+		li{
+			font-size: 1em;
+			margin: 0 0.6em;
+		}
+	}
+}
