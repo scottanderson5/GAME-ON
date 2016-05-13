@@ -146,8 +146,8 @@ $(window).resize();
  
 });
 
+//STARS
 
-
-
-
-
+ $(function(){
+    $('.container').rating();
+});
