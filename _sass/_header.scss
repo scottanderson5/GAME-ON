@@ -15,7 +15,7 @@
 }
 
 .right-header-overflow-wrap{
-	display: none;
+	//display: none;
 	overflow: hidden;
 	float: right;
 
@@ -24,7 +24,7 @@
 	}
 }
 
-.header-menu{
+.header-name{
 	float: right;
 }
 
@@ -47,8 +47,25 @@
 
 }
 
-.header-menu-wrap{
+.header-name-wrap{
+	display: none;
 	float: right;
+	padding: 3em 0em 0em 0em;
+
+	a{
+		text-decoration: none;
+		font-family: $MainFontFamily;
+		color: white;
+		letter-spacing: $HeaderLetterSpacing;
+	}
+
+	a:hover{
+		text-decoration: underline;
+	}
+
+	@media (min-width: 900px){
+		display: block;
+	}
 }
 
 .header-nav-wrap{
