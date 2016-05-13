@@ -6,28 +6,45 @@ title: Profile Page
 <div class="row">
 	<div class="col col-12 profile-main">
 
+	<!--<a class="js-open-modal" href="#" data-modal-id="popup2"> Click here </a>-->
+
 <!-- PROGRESS TRACKER -->
 		<div class="row">
 				<div class="col col-10 works-explained-profile">
+					
 					<div class="step-wrap-profile">
-						<a href="#modal">
+						<a class="js-open-modal" href="#" data-modal-id="popup">
 							<img src="Assets/requestblank.gif" class="step-sizing-profile">
 						</a>
-						<a href="#modal">
+						<a class="js-open-modal" href="#" data-modal-id="popup">
 							<li class="works-explained-nameA">REQUEST A GAME</li>
 						</a>	
-					</div>	
+					</div>
+						
 						<img src="Assets/blankarrow.gif" class="works-arrow-profileB">
-					<div class="step-wrap-profileB">	
-						<img src="Assets/litsection.gif" class="step-sizing-profile">
-						<li class="works-explained-nameB">GAME SHIPPED</li>
+					
+					<div class="step-wrap-profileB">
+						<a class="js-open-modal" href="#" data-modal-id="popup2">
+							<img src="Assets/litsection.gif" class="step-sizing-profile">
+						</a>
+						<a class="js-open-modal" href="#" data-modal-id="popup2">	
+							<li class="works-explained-nameB">GAME SHIPPED</li>
+						</a>	
 					</div>	
+						
 						<img src="Assets/blankarrow.gif" class="works-arrow-profileB">
+					
 					<div class="step-wrap-profile">	
-						<img src="Assets/returnblank.gif" class="step-sizing-profile">
-						<li class="works-explained-nameC">RETURN OR BUY</li>
+						<a class="js-open-modal" href="#" data-modal-id="popup3">
+							<img src="Assets/returnblank.gif" class="step-sizing-profile">
+						</a>
+						<a class="js-open-modal" href="#" data-modal-id="popup3">	
+							<li class="works-explained-nameC">RETURN OR BUY</li>
+						</a>	
 					</div>	
+						
 						<img src="Assets/arrow.gif" class="works-arrow-profile">
+					
 					<div class="step-wrap-profile">	
 						<a href="review.html">
 							<img src="Assets/litrating.gif" class="step-sizing-profile">
@@ -35,6 +52,7 @@ title: Profile Page
 							<li class="works-explained-nameP">RATE AND REVIEW</li>
 						</a>	
 					</div>	
+				
 				</div>
 			</div>
 
@@ -217,28 +235,86 @@ title: Profile Page
 				</div>
 			</div>	
 
-<a class="js-open-modal" href="#" data-modal-id="popup"> Click me </a>
+<!-- MODAL POP UPS -->
 
 <div id="popup" class="modal-box"> 
-	<header>
+	<!--<header>
+		<a href="#" class="js-modal-close close">×</a>
+			<h3>
+				<a href="http://www.jqueryscript.net/tags.php?/Modal/">
+					Modal
+				</a> 
+					Title
+			</h3>
+	</header>-->
 
-    <a href="#" class="js-modal-close close">×</a>
+  	<div class="modal-body">
+		<li>Looks like you already requested a game!</li>
+		<li>After you rate and review that game, you can request a new one!</li>
+	</div>
 
-    <h3><a href="http://www.jqueryscript.net/tags.php?/Modal/">Modal</a> Title</h3>
+  	<footer class="modal-footer">
+		<a href="#" class="js-modal-close">
+			<div class="modal-close-button">
+				<li>
+					OK
+				</li>	
+			</div>	
+		</a>
+	</footer>
+</div>
 
-  </header>
+<div id="popup2" class="modal-box2"> 
+	<!--<header>
+		<a href="#" class="js-modal-close close">×</a>
+			<h3>
+				<a href="http://www.jqueryscript.net/tags.php?/Modal/">
+					Modal
+				</a> 
+					Title
+			</h3>
+	</header>-->
 
-  <div class="modal-body">
+  	<div class="modal-body">
+		<li>Your game was shipped on May 7, 2016.</li>
+	</div>
 
-    <p>Modal Body</p>
+  	<footer class="modal-footer">
+		<a href="#" class="js-modal-close">
+			<div class="modal-close-button">
+				<li>
+					OK
+				</li>	
+			</div>	
+		</a>
+	</footer>
+</div>
 
-  </div>
+<div id="popup3" class="modal-box3"> 
+	<!--<header>
+		<a href="#" class="js-modal-close close">×</a>
+			<h3>
+				<a href="http://www.jqueryscript.net/tags.php?/Modal/">
+					Modal
+				</a> 
+					Title
+			</h3>
+	</header>-->
 
-  <footer>
+  	<div class="modal-body">
+		<li>You purchased the game on May 14, 2016.</li>
+		<li>Thank you!</li>
+	</div>
 
-    <a href="#" class="js-modal-close">Close Button</a>
-
-  </footer>
+  	<footer class="modal-footer">
+		<a href="#" class="js-modal-close">
+			<div class="modal-close-button">
+				<li>
+					OK
+				</li>	
+			</div>	
+		</a>
+	</footer>
 </div>
 
 

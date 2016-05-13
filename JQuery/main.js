@@ -47,7 +47,7 @@ $("input:checkbox").on('click', function() {
 });
 
 
-//MODAL
+//MODAL REQUEST
 
 $(function(){
 
@@ -73,6 +73,72 @@ $(window).resize(function() {
   $(".modal-box").css({
     top: ($(window).height() - $(".modal-box").outerHeight()) / 2,
     left: ($(window).width() - $(".modal-box").outerWidth()) / 2
+  });
+});
+ 
+$(window).resize();
+ 
+});
+
+//MODAL TRACK (2)
+
+$(function(){
+
+var appendthis =  ("<div class='modal-overlay js-modal-close'></div>");
+
+  $('a[data-modal-id]').click(function(e) {
+    e.preventDefault();
+    $("body").append(appendthis);
+    $(".modal-overlay").fadeTo(500, 0.7);
+    //$(".js-modalbox").fadeIn(500);
+    var modalBox = $(this).attr('data-modal-id');
+    $('#'+modalBox).fadeIn($(this).data());
+  });  
+  
+  
+$(".js-modal-close, .modal-overlay").click(function() {
+  $(".modal-box2, .modal-overlay").fadeOut(500, function() {
+    $(".modal-overlay").remove();
+  });
+});
+ 
+$(window).resize(function() {
+  $(".modal-box2").css({
+    top: ($(window).height() - $(".modal-box2").outerHeight()) / 2,
+    left: ($(window).width() - $(".modal-box2").outerWidth()) / 2
+  });
+});
+ 
+$(window).resize();
+ 
+});
+
+//MODAL RETURN (3)
+
+$(function(){
+
+var appendthis =  ("<div class='modal-overlay js-modal-close'></div>");
+
+  $('a[data-modal-id]').click(function(e) {
+    e.preventDefault();
+    $("body").append(appendthis);
+    $(".modal-overlay").fadeTo(500, 0.7);
+    //$(".js-modalbox").fadeIn(500);
+    var modalBox = $(this).attr('data-modal-id');
+    $('#'+modalBox).fadeIn($(this).data());
+  });  
+  
+  
+$(".js-modal-close, .modal-overlay").click(function() {
+  $(".modal-box3, .modal-overlay").fadeOut(500, function() {
+    $(".modal-overlay").remove();
+  });
+});
+ 
+$(window).resize(function() {
+  $(".modal-box3").css({
+    top: ($(window).height() - $(".modal-box3").outerHeight()) / 2,
+    left: ($(window).width() - $(".modal-box3").outerWidth()) / 2
   });
 });
  
