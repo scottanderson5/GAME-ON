@@ -1,0 +1,22 @@
+@import "colors";
+@import	"fonts";
+@import "grid";	
+
+//ABOUT PAGE
+
+.about-main{
+	background-color: white;
+	padding: 3em 0em 0em 0em;
+}
+
+.about-intro{
+	font-family: $MainFontFamily;
+	font-size: 1.2em;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.about-intro-text{
+	margin: 0 auto;
+	text-align: center;
+}

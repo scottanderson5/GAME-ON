@@ -26,4 +26,11 @@
 4. CHECKit
 5. Game On
 
+#Two Words that inspired the app
+1. Discovery
+    * Gamer can find new games to play
+2. Opportunity 
+    * Company can market the game
+    * Comapny can get feedback on the game
+
 

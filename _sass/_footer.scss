@@ -10,3 +10,22 @@
 	height: 7em;
 }
 
+.footer-nav-wrap{
+
+	margin: 4em auto 1em auto;
+	text-align: center;
+
+	a{
+		display: inline-block;
+		text-decoration: none;
+		color: white;
+		margin: 0 1em 0em 0em;
+	}
+
+	a:hover{
+		text-decoration: underline;
+	}
+}
+
+
+

@@ -41,6 +41,21 @@
 }
 
 .step-wrap-profileB{
+	display: none;
+	margin: 0 auto 1em auto;
+
+	a{
+		text-decoration: none;
+		color: $MainFontColor;
+	}
+
+	@media (min-width: 900px){
+		display: inline-block;
+	}
+
+}
+
+.step-wrap-profileD{
 	display: inline-block;
 	margin: 0 auto 1em auto;
 
