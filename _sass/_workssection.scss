@@ -27,6 +27,11 @@
 	width: 20em;
 	margin: 0 auto 1em auto;
 
+	a{
+		text-decoration: none;
+		color: $MainFontColor;
+	}
+
 	@media (min-width: 900px){
 		display: inline-block;
 		margin: 0 auto;
@@ -83,3 +88,4 @@
 		width: 13em;
 	}
 }
+

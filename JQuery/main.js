@@ -7,7 +7,7 @@ $('.header-menu').click(function(){
 
 
 
-
+//OWL CAROUSEL PLUGIN
 $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
@@ -146,8 +146,45 @@ $(window).resize();
  
 });
 
+//MODAL REVIEW (4)
+
+$(function(){
+
+var appendthis =  ("<div class='modal-overlay4 js-modal-close'></div>");
+
+  $('a[data-modal-id]').click(function(e) {
+    e.preventDefault();
+    $("body").append(appendthis);
+    $(".modal-overlay4").fadeTo(500, 0.7);
+    //$(".js-modalbox").fadeIn(500);
+    var modalBox = $(this).attr('data-modal-id');
+    $('#'+modalBox).fadeIn($(this).data());
+  });  
+  
+  
+$(".js-modal-close, .modal-overlay4").click(function() {
+  $(".modal-box4, .modal-overlay4").fadeOut(500, function() {
+    $(".modal-overlay4").remove();
+  });
+});
+ 
+$(window).resize(function() {
+  $(".modal-box4").css({
+    top: ($(window).height() - $(".modal-box4").outerHeight()) / 2,
+    left: ($(window).width() - $(".modal-box4").outerWidth()) / 2
+  });
+});
+ 
+$(window).resize();
+ 
+});
+
+
+
 //STARS
 
  $(function(){
     $('.container').rating();
 });
+
+ 
