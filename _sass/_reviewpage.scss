@@ -20,7 +20,7 @@
 	margin: 0 auto;
 }
 
-.reviews-element1{
+/*.reviews-element1{
 	@media (min-width: 900px){
 		float: right;
 	}
@@ -30,7 +30,7 @@
 	@media (min-width: 900px){
 		float: left;
 	}
-}
+}*/
 
 %review-form-wrap{
 	background-color: white;
@@ -103,15 +103,22 @@
 .review-form-shadow-wrap4{
 	@extend %review-form-shadow-wrap;
 	width: 85%;
+	overflow: hidden;
+	background-color: $BackgroundColor;
 
 	@media (min-width: 600px){
 		width: 80%;
 	}
 
 	@media (min-width: 900px){
-		width: 100%;
+		//width: 50%;
 	}
 
+}
+
+.review-game-wrap{
+	float: left;
+	background-color: $BackgroundColor;
 }
 
 .review-game-title{
@@ -124,15 +131,22 @@
 	margin: 2em auto 0em auto;
 
 	@media (min-width: 900px){
-		width: 94%;
+		width: 100%;
 	}
 }
 
 .review-current-game{
 	background-color: $BackgroundColor;
-	padding: 1em;
+	//padding: 3em 1em 3em 1em;
+	margin: 2em 0em 0em 2em;
 	text-align: center;
 	
+}
+
+.reviews-wrap{
+	float: right;
+	width: 30em;
+	overflow: hidden;
 }
 
 .review-question{
@@ -142,15 +156,15 @@
 	line-height: 1.6em;
 	width: 100%;
 	padding: 0.5em;
-	margin: 2em auto 0em auto;
 }
 
 %review-form-answers{
 	background-color: $BackgroundColor;
-	width: 100%;
-	padding: 0.5em;
+	width: 28em;
+	padding: 0.5em 0.5em 0.5em 0em;
 	overflow: hidden;
 	margin: 0 auto;
+	float: right;
 }
 
 .review-form-answers{
@@ -213,7 +227,7 @@
 }
 
 .answer-choice{
-	margin: 0em 0em 0em 0.3em;
+	margin: 0em 0em 0em 0em;
 	float: left;
 }
 
