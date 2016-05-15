@@ -110,16 +110,36 @@
 	margin: 0 auto 4em auto;
 }
 
-//RECENT REVIEWS
+//CURRENT GAME
 
-.user-reviews-wrap{
-	border: 1px solid $BorderColor;
+.user-leftside-wrap{
 	width: 24em;
 	margin: 0 auto;
 
 	@media (min-width: 900px){
 		float: left;
 	}
+}
+
+.user-current-game{
+	border: 1px solid $BorderColor;
+	background-color: $BackgroundColor;
+	height: 16em;
+	margin: 0em 0em 3em 0em;
+}
+
+.user-nowgame-bottom{
+	background-color: $BackgroundColor;
+}
+
+.thegame{
+	margin: 2em 0em 0em 8em;
+}
+
+//RECENT REVIEWS
+
+.user-reviews-wrap{
+	border: 1px solid $BorderColor;
 }
 
 .user-reviews-top{
@@ -247,8 +267,7 @@
 
 .friends-wrap{
 	padding: 0em 0em 0em 3em;
-	overflow-y: auto;
-	height: 18.2em;
+	height: 30em;
 }
 
 .friends-list-item{
