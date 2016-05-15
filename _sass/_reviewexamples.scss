@@ -54,7 +54,7 @@
 }
 
 .review-example-top-left{
-	background-color: $BackgroundColor;
+	//background-color: $BackgroundColor;
 	padding: 0em 0.8em 0em 0.2em;
 	margin: 1em 0em 1em 0.5em;
 	overflow: hidden;
@@ -120,6 +120,7 @@
 
 .status-color{
 	color: $StatusColor;
+	margin: 0em 0em 0em 0.5em;
 }
 
 .stars-wrap{

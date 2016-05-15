@@ -155,6 +155,7 @@
 .user-current-game{
 	border: 1px solid $BorderColor;
 	background-color: $BackgroundColor;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 	height: 16em;
 	margin: 0em 0em 3em 0em;
 }
@@ -179,6 +180,7 @@
 
 .user-reviews-wrap{
 	border: 1px solid $BorderColor;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 }
 
 .user-reviews-top{
@@ -290,6 +292,7 @@
 .user-details-status{
 	border: 1px solid $BorderColor;
 	background-color: $BackgroundColor;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 	height: 12em;
 	margin: 0em 0em 3em 0em;
 }
@@ -320,6 +323,7 @@
 .user-reviews-friends{
 	border: 1px solid $BorderColor;
 	background-color: $BackgroundColor;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 	margin: 1em 0em 0em 0em;
 }
 
@@ -444,8 +448,12 @@
   left: 0;
   z-index: 900;
   width: 100%;
-  height: 1000px;
+  height: 1350px;
   background: rgba(0, 0, 0, 0.3) !important;
+
+  @media (min-width: 900px){
+  	 height: 1435px;
+  }
 }
 
 .modal-body{

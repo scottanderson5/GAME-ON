@@ -36,10 +36,6 @@
 		float: right;
 	}
 
-	/*@media (min-width: 600px){
-		float: left;
-	}*/
-
 }
 
 .review-form-wrap3{
@@ -419,7 +415,7 @@
 .review-button-wrap-holder2{
 	overflow: hidden;
 	width: 75%;
-	margin: 0em 0em 2em 11em;
+	margin: 0em 0em 2em 10em;
 
 	@media (min-width: 600px){
 		//margin: 0em 0em 2em 20em;
@@ -514,8 +510,25 @@
 
 //MODAL
 
+%modal-box {
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  width: 50%;
+  background: $BackgroundColor;
+  font-family: $MainFontFamily;
+  border-radius: 4px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  border: 1px solid $BorderColor;
+}
+
 .modal-box4{
 	@extend %modal-box;
+	margin: 30em 0em 0em 0em;
+
+	@media (min-width: 600px){
+		margin: 0em;
+	}
 }
 
 .modal-box4 header,
@@ -547,7 +560,7 @@
   left: 0;
   z-index: 900;
   width: 100%;
-  height: 1000px;
+  height: 100%;
   background: rgba(0, 0, 0, 0.3) !important;
 }
 
