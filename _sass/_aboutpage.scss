@@ -5,18 +5,32 @@
 //ABOUT PAGE
 
 .about-main{
-	background-color: white;
-	padding: 3em 0em 0em 0em;
+	background-color: $BackgroundColor;
+	padding: 3em 0em 3em 0em;
 }
 
 .about-intro{
 	font-family: $MainFontFamily;
-	font-size: 1.2em;
 	margin: 0 auto;
 	text-align: left;
 }
 
 .about-intro-text{
 	margin: 0 auto;
+	font-size: 1.5em;
 	text-align: center;
+}
+
+.about-info-wrap{
+	overflow: hidden;
+}
+
+.about-p{
+	width: 40%;
+	font-size: 1.1em;
+	float: left;
+}
+
+.about-pic{
+	float: right;
 }
