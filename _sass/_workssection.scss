@@ -8,6 +8,20 @@
 
 //WORKS SECTION
 
+.featured-titles-nameB{
+	@extend %featured-titles-name;
+	margin: 2em auto 1em auto;
+
+	a{
+		color: $MainFontColor;
+		text-decoration: none;
+	}
+}
+
+.featured-titles-nameB:hover{
+	text-decoration: underline;
+}
+
 .works-section{
 	background-color: white;
 }
@@ -16,10 +30,6 @@
 	margin: 1em auto 0em auto;
 	padding: 0em 0em 4em 0em;
 	text-align: center;	
-
-	@media (min-width: 900px){
-		width: 1350px;
-	}
 }
 
 .step-wrap{
@@ -32,26 +42,61 @@
 		color: $MainFontColor;
 	}
 
-	@media (min-width: 900px){
+	@media (min-width: 600px){
 		display: inline-block;
+		width: 10em;
 		margin: 0 auto;
+	}
+
+	@media (min-width: 900px){
 		width: 15em;
 	}
+}
+
+.step-wrap:hover{
+	a{
+		color: $StepDescriptionFontHoverColor;
+		font-weight: 400;
+	}
+}
+
+.step-wrap-underneath{
+	margin: 0.5 auto;
+	width: 16em;
+	display: inline-block;
 }
 
 .works-arrow{
 	display: none;
 	margin: 0em 0em 5.2em 0em;
 
-	@media (min-width: 900px){
+	@media (min-width: 600px){
 		display: inline-block;
+		width: 3em;
+	}
+
+	@media (min-width: 900px){
 		width: 5em;
 	}
 }
 
 .step-sizing{
-	width: 8em;
+	width: 7em;
+	transition: width 0.3s ease;
+
+	@media (min-width: 900px){
+		width: 9em;
+	}
 }
+
+.step-sizing:hover{
+	width: 7.3em;
+
+	@media (min-width: 900px){
+		width: 9.3em;
+	}
+}
+
 
 %works-explained-name{
 	font-family: $MainFontFamily;
@@ -85,8 +130,14 @@
 	max-width: 20em;
 	margin: 0.3em auto 0em auto;
 
-	@media (min-width: 900px){
+	@media (min-width: 600px){
 		width: 13em;
+		font-size: 0.8em
+	}
+
+	@media (min-width: 900px){
+		width: 15em;
+		font-size: 1em;
 	}
 }
 
