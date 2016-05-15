@@ -547,12 +547,10 @@
 .modal-box4 footer,
 .modal-box4 .modal-footer {
   padding: 0.5em;
-  //border-top: 1px solid #ddd;
-  //background: rgba(0, 0, 0, 0.02);
   text-align: right;
 }
 
-.modal-overlay4 {
+.modal-overlay4{
   opacity: 0;
   filter: alpha(opacity=0);
   position: absolute;
@@ -560,7 +558,7 @@
   left: 0;
   z-index: 900;
   width: 100%;
-  height: 100%;
+  height: 500px;
   background: rgba(0, 0, 0, 0.3) !important;
 }
 
