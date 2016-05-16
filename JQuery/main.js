@@ -312,6 +312,38 @@ $(window).resize();
  
 });
 
+//MODAL WORKS (9)
+
+$(function(){
+
+var appendthis =  ("<div class='modal-overlay5 js-modal-close'></div>");
+
+  $('a[data-modal-id]').click(function(e) {
+    e.preventDefault();
+    $("body").append(appendthis);
+    $(".modal-overlay5").fadeTo(500, 0.7);
+    //$(".js-modalbox").fadeIn(500);
+    var modalBox = $(this).attr('data-modal-id');
+    $('#'+modalBox).fadeIn($(this).data());
+  });  
+  
+  
+$(".js-modal-close, .modal-overlay5").click(function() {
+  $(".modal-box9, .modal-overlay5").fadeOut(500, function() {
+    $(".modal-overlay5").remove();
+  });
+});
+ 
+$(window).resize(function() {
+  $(".modal-box9").css({
+    top: ($(window).height() - $(".modal-box9").outerHeight()) / 2,
+    left: ($(window).width() - $(".modal-box9").outerWidth()) / 2
+  });
+});
+ 
+$(window).resize();
+ 
+});
 
 
 //STARS

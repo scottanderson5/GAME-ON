@@ -74,6 +74,72 @@
   width: 100%;
 }
 
+//MODAL
+
+.modal-box9{
+  display: none;
+  position: absolute;
+  z-index: 1000;
+  width: 80%;
+  background: $BackgroundColor;
+  font-family: $MainFontFamily;
+  border-radius: 4px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  border: 1px solid $BorderColor;
+  margin: 20em 0em 0em 0em;
+
+  @media (min-width: 600px){
+    width: 65%;
+    margin: 0em 0em 0em 0em;
+  }
+
+  @media (min-width: 900px){
+    width: 50%;
+  }
+}
+
+.modal-box9 header,
+.modal-box9 .modal-header {
+  background-color: #3AADC8;  
+  padding: 1.25em 1.5em;
+  border-bottom: 1px solid #ddd;
+}
+
+.modal-box9 header h3,
+.modal-box9 header h4,
+.modal-box9 .modal-header h3,
+.modal-box9 .modal-header h4 { margin: 0em; }
+
+.modal-box9 .modal-body { padding: 2em 1.5em; }
+
+.modal-box9 footer,
+.modal-box9 .modal-footer {
+  padding: 0.5em;
+  text-align: right;
+}
+
+.popup-pic{
+  width: 90%;
+}
+
+.popup-pic2{
+  width: 70%;
+}
+
+.coup-intro-left{
+  width: 45%;
+  float: left;
+}
+
+.coup-intro-right{
+  width: 48%;
+  float: right;
+}
+
+.coup-stars{
+  border-bottom: 1px solid $BorderColor;
+}
+
 
 //CAROUSEL
 
