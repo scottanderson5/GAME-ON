@@ -5,7 +5,7 @@
 //ABOUT PAGE
 
 .about-main{
-	background-color: $BackgroundColor;
+	background-color: #FFFFFF;
 	padding: 3em 0em 3em 0em;
 }
 
@@ -25,35 +25,50 @@
 }
 
 .about-intro-text{
+	font-family: $TitleFontFamily;
 	margin: 0 auto;
 	font-size: 1.5em;
 	text-align: center;
 }
 
 .about-info-wrap{
+	background-color: $BackgroundColor;
+	border: 1px solid $BorderColor;
 	overflow: hidden;
-	padding: 2em 0em 0em 0em;
+	padding: 1em 0em 0em 0em;
+	margin: 1em 0em 0em 0em;
 }
 
 .about-p1{
-	width: 47%;
+	width: 90%;
+	padding: 0em 0em 0em 1em;
 	font-size: 1em;
 	line-spacing: 1.2em;
-	float: left;
+
+	@media (min-width: 600px){
+		padding: 0em 0em 0em 0.8em;
+		float: left;
+		width: 47%;
+	}
 
 	@media (min-width: 900px){
 		font-size: 1.1em;
-		margin: 1em 0em 0em 0em;
+		margin: 0.2em auto 0em auto;
+		padding: 0em 0em 0em 0.6em;
 	}
 
 	@media (min-width: 1300px){
-		margin: 2.5em 0em 0em 0em;
+		margin: 1em 0em 0em 0em;
 	}
 }
 
 .about-pic1{
-	float: right;
-	width: 50%;
+	width: 100%;
+
+	@media (min-width: 600px){
+		float: right;
+		width: 50%;
+	}
 }
 
 .about-intro2{
@@ -62,15 +77,22 @@
 }
 
 .about-p2{
-	width: 43%;
+	width: 90%;
+	padding: 0em 0em 0em 1em;
 	font-size: 1em;
 	line-spacing: 1.2em;
 	margin: 0em 0em 0em 1em;
-	float: right;
+
+	@media (min-width: 600px){
+		width: 43%;
+		float: right;
+		padding: 0em 0.8em 0em 0em;
+	}
 
 	@media (min-width: 900px){
 		font-size: 1.1em;
-		margin: 1.5em 0em 0em 1em;
+		margin: 1em 0em 0em 0em;
+		padding: 0em 1.5em 0em 0em;
 	}
 
 	@media (min-width: 1300px){
@@ -79,8 +101,13 @@
 }
 
 .about-pic2{
-	float: left;
-	width: 50%;
+	width: 95%;
+	padding: 0em 0em 0em 0.6em;
+
+	@media (min-width: 600px){
+		width: 50%;
+		float: left;
+	}
 }
 
 %about-picture{
@@ -89,27 +116,27 @@
 
 .about-picture1{
 	@extend %about-picture;
-	padding: 7em 0em 0em 0em;
+	padding: 0.3em 0em 0em 0em;
 
 	@media (min-width: 600px){
 		padding: 3em 0em 0em 0em;
 	}
 
 	@media (min-width: 900px){
-		padding: 1em 0em 0em 0em;
+		padding: 0em 0em 0.8em 0em;
 	}
 }
 
 .about-picture2{
 	@extend %about-picture;
-	padding: 4em 0em 0em 0em;
+	padding: 0.3em 0em 0em 0em;
 
 	@media (min-width: 600px){
-		padding: 1em 0em 0em 0em;
+		padding: 1em 0em 0em 0.8em;
 	}
 
 	@media (min-width: 900px){
-		padding: 0.5em 0em 0em 0em;
+		padding: 0em 0em 0.8em 0.3em;
 	}
 }
 
