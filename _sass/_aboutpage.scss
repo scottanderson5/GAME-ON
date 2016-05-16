@@ -12,6 +12,11 @@
 %about-intro{
 	font-family: $MainFontFamily;
 	text-align: left;
+	width: 90%;
+
+	@media (min-width: 600px){
+		width: 100%;
+	}
 }
 
 .about-intro1{
@@ -32,14 +37,23 @@
 
 .about-p1{
 	width: 47%;
-	font-size: 1.1em;
+	font-size: 1em;
 	line-spacing: 1.2em;
-
 	float: left;
+
+	@media (min-width: 900px){
+		font-size: 1.1em;
+		margin: 1em 0em 0em 0em;
+	}
+
+	@media (min-width: 1300px){
+		margin: 2.5em 0em 0em 0em;
+	}
 }
 
 .about-pic1{
 	float: right;
+	width: 50%;
 }
 
 .about-intro2{
@@ -49,17 +63,55 @@
 
 .about-p2{
 	width: 43%;
-	font-size: 1.1em;
+	font-size: 1em;
 	line-spacing: 1.2em;
 	margin: 0em 0em 0em 1em;
-
 	float: right;
+
+	@media (min-width: 900px){
+		font-size: 1.1em;
+		margin: 1.5em 0em 0em 1em;
+	}
+
+	@media (min-width: 1300px){
+		margin: 2em 0em 0em 0em;
+	}
 }
 
 .about-pic2{
 	float: left;
+	width: 50%;
 }
 
+%about-picture{
+	width: 100%;
+}
+
+.about-picture1{
+	@extend %about-picture;
+	padding: 7em 0em 0em 0em;
+
+	@media (min-width: 600px){
+		padding: 3em 0em 0em 0em;
+	}
+
+	@media (min-width: 900px){
+		padding: 1em 0em 0em 0em;
+	}
+}
+
+.about-picture2{
+	@extend %about-picture;
+	padding: 4em 0em 0em 0em;
+
+	@media (min-width: 600px){
+		padding: 1em 0em 0em 0em;
+	}
+
+	@media (min-width: 900px){
+		padding: 0.5em 0em 0em 0em;
+	}
+}
 
 
 
