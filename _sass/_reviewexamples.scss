@@ -28,8 +28,13 @@
 	padding: 0em 1em 0em 1em;
 	margin: 0em 1em 3em 1em;
 
+	@media (min-width: 600px){
+		width: 70%;
+		margin: 0 auto 1em auto;
+	}
+
 	@media (min-width: 900px){
-	width: 42%;
+		width: 40%;
 	}
 }
 
