@@ -32,49 +32,47 @@
 }
 
 .carousel-wrap{
-	margin: 1em auto 0 auto;
+	margin: 1em auto 0em auto;
 }
 
 .owl-carousel{
-	margin: 2em 0em 3em 0em;
-  position: relative;
+	margin: 2em auto 3em auto;
+  //position: relative;
 }
+
 
 .owl-nav{
 	overflow: hidden;
 	margin: 1em 0em 0em 0em;
 }
 
-%owl-controls{
-	//background-color: $CarouselButtonBackground;
-	color: black;
-	padding: 0.2em;
-}
-
 .owl-prev{
   position: absolute;
-  transform: translate(1.55em, 0em);
-  
-    @media (min-width: 600px){
-    transform: translate(-3em, -7.5em);
+  left: 2em;
 
-    }
+  @media (min-width: 600px){
+    top: 40%;
+    left: -4em;
+  }  
+
 
 }
 
 .owl-next{
   position: absolute;
-  transform: translate(22.8em, 0em);
-
+  right: 2em;
+  
   @media (min-width: 600px){
-    transform: translate(44em, -7.5em);
-  }
+    top: 40%;
+    right: -4em;
+  }  
 
-  @media (min-width: 900px){
-    transform: translate(69.35em, -7.5em);
-  }
 }
 
+.extra{
+  height: 2em;
+  width: 100%;
+}
 
 
 //CAROUSEL
