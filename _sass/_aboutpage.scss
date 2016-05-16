@@ -9,10 +9,14 @@
 	padding: 3em 0em 3em 0em;
 }
 
-.about-intro{
+%about-intro{
 	font-family: $MainFontFamily;
-	margin: 0 auto;
 	text-align: left;
+}
+
+.about-intro1{
+	@extend %about-intro;
+	margin: 0 auto;
 }
 
 .about-intro-text{
@@ -37,6 +41,12 @@
 .about-pic{
 	float: right;
 }
+
+.about-intro2{
+	@extend %about-intro;
+	margin: 2em auto;
+}
+
 
 
 

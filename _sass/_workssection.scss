@@ -221,16 +221,15 @@
 	border-radius: 4px;
 	box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
 	border: 1px solid $BorderColor;
-	margin: 50em 0em 0em 0em;
+	margin: 40em 0em 0em 0em;
 
 	@media (min-width: 600px){
 		width: 65%;
-		margin: 31em 0em 0em 0em;
+		margin: 30em 0em 0em 0em;
 	}
 
 	@media (min-width: 900px){
 		width: 50%;
-		margin: 33em 0em 0em 0em;
 	}
 }
 
@@ -264,7 +263,7 @@
 	border-radius: 4px;
 	box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
 	border: 1px solid $BorderColor;
-	margin: 60em 0em 0em 0em;
+	margin: 40em 0em 0em 0em;
 
 	@media (min-width: 600px){
 		width: 65%;
@@ -273,7 +272,6 @@
 
 	@media (min-width: 900px){
 		width: 50%;
-
 	}
 }
 
@@ -307,7 +305,7 @@
 	border-radius: 4px;
 	box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
 	border: 1px solid $BorderColor;
-	margin: 80em 0em 0em 0em;
+	margin: 40em 0em 0em 0em;
 
 	@media (min-width: 600px){
 		width: 65%;
@@ -316,7 +314,6 @@
 
 	@media (min-width: 900px){
 		width: 50%;
-		margin: 33em 0em 0em 0em;
 	}
 }
 
