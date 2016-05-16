@@ -10,7 +10,7 @@
 
 .featured-titles-nameB{
 	@extend %featured-titles-name;
-	margin: 2em auto 1em auto;
+	margin: 2em auto 2em auto;
 
 	a{
 		color: $MainFontColor;
@@ -33,19 +33,53 @@
 	width: 20em;
 	margin: 0 auto 1em auto;
 
+	.step-wrap-img {
+		width: 100%;
+		position: relative;
+		height: 9.3em;
+		img {
+			position: absolute;
+			top: 25%;
+			left: 32%;
+		}
+	}
+
 	a{
 		text-decoration: none;
 		color: $MainFontColor;
+		display: block;
 	}
 
 	@media (min-width: 600px){
 		display: inline-block;
 		width: 10em;
 		margin: 0 auto;
+
+		.step-wrap-img {
+		width: 100%;
+		position: relative;
+		height: 9.3em;
+		img {
+			position: absolute;
+			top: 22%;
+			left: 23%;
+		}
+	}
 	}
 
 	@media (min-width: 900px){
 		width: 15em;
+
+		.step-wrap-img {
+		width: 100%;
+		position: relative;
+		height: 9.3em;
+		img {
+			position: absolute;
+			top: 0%;
+			left: 25%;
+		}
+	}
 	}
 }
 
@@ -64,7 +98,7 @@
 
 .works-arrow{
 	display: none;
-	margin: 0em 0em 3.2em 0em;
+	margin: 0em 0em 3.3em 0em;
 
 	@media (min-width: 600px){
 		display: inline-block;
@@ -77,9 +111,26 @@
 	}
 }
 
+.step-sizing1{
+	width: 7.2em;
+	transition: all .2s ease-in-out;
+
+	@media (min-width: 900px){
+		width: 9.2em;
+	}
+}
+
+.step-sizing1:hover{
+	transform: scale(1.1);
+	
+	@media (min-width: 900px){
+		transform: scale(1.1);
+	}
+}
+
 .step-sizing{
 	width: 7em;
-	transition: width 0.3s ease;
+	transition: all .2s ease-in-out;
 
 	@media (min-width: 900px){
 		width: 9em;
@@ -87,10 +138,10 @@
 }
 
 .step-sizing:hover{
-	width: 7.3em;
+	transform: scale(1.1);
 
 	@media (min-width: 900px){
-		width: 9.3em;
+		transform: scale(1.1);
 	}
 }
 
@@ -105,20 +156,28 @@
 .works-explained-nameA{
 	@extend %works-explained-name;
 
+	@media (min-width: 600px){
+		padding: 0em 0em 0em 1.5em;
+	}
+	
+
 }
 
 .works-explained-nameB{
 	@extend %works-explained-name;
+	
 
 }
 
 .works-explained-nameC{
 	@extend %works-explained-name;
 
+
 }
 
 .works-explained-nameD{
 	@extend %works-explained-name;
+	margin: 0.5em 0em 0em 0em;
 
 }
 
@@ -335,14 +394,6 @@
 .modal-box8 .modal-footer {
   padding: 0.5em;
   text-align: right;
-}
-
-.x-move{
-	transform: translate(0, -1em);
-
-	@media (min-width: 600px){
-
-	}
 }
 
 .popup-pic{

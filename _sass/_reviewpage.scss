@@ -48,6 +48,7 @@
 
 .review-form-wrap4{
 	@extend %review-form-wrap;
+	padding: 0em 0em 1em 0em;
 }
 
 %review-form-shadow-wrap{
@@ -102,6 +103,7 @@
 	width: 85%;
 	overflow: hidden;
 	background-color: $BackgroundColor;
+	padding: 0em 0em 1em 0em;
 
 	@media (min-width: 600px){
 		width: 90%;
@@ -119,7 +121,7 @@
 	margin: 2em 0em 1.5em 7em;
 
 	@media (min-width: 600px){
-		margin: 2em 0em 0em 2em;
+		margin: 3.4em 0em 0em 2em;
 		float: left;
 	}
 }
@@ -133,13 +135,17 @@
 .reviews-wrap{
 	padding: 0em 0em 0em 1em;
 	overflow: hidden;
+	//background-color: yellow;
 
 	@media (min-width: 600px){
-		width: 66%;
+		padding: 0em 0em 0em 1.5em;
+		width: 68%;
 	}
 
 	@media (min-width: 900px){
+		padding: 0em;
 		float: right;
+		width: 64.7%;
 	}
 }
 
@@ -168,7 +174,7 @@
 
 %review-form-answers{
 	background-color: $BackgroundColor;
-	padding: 0.5em 0.5em 0.5em 0em;
+	padding: 0.8em 0.8em 0.8em 0em;
 	overflow: hidden;
 }
 
