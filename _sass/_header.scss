@@ -15,13 +15,21 @@
 }
 
 .right-header-overflow-wrap{
-	//display: none;
 	overflow: hidden;
 	float: right;
 
 	@media (min-width: 900px){
 		display: block;
 	}
+}
+
+.search-form{
+	float: left;
+	padding: 2.8em 0em 0em 4em;
+}
+
+#s{
+	width: 20em;
 }
 
 .header-name{
