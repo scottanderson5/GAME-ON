@@ -37,6 +37,7 @@
 
 .owl-carousel{
 	margin: 2em 0em 3em 0em;
+  position: relative;
 }
 
 .owl-nav{
@@ -45,22 +46,22 @@
 }
 
 %owl-controls{
-	background-color: $CarouselButtonBackground;
-	color: white;
+	//background-color: $CarouselButtonBackground;
+	color: black;
 	padding: 0.2em;
-	border-radius: 5%;
 }
 
 .owl-prev{
-	@extend %owl-controls;
-	float: left;
-
+  transform: translate(-3em, -7.5em);
+  position: absolute;
 }
 
 .owl-next{
-	@extend %owl-controls;
-	float: right;
+  transform: translate(69.35em, -7.5em);
+  position: absolute;
 }
+
+
 
 //CAROUSEL
 

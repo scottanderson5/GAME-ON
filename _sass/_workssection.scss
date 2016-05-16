@@ -10,11 +10,15 @@
 
 .featured-titles-nameB{
 	@extend %featured-titles-name;
-	margin: 2em auto 2em auto;
+	margin: 2em auto 1em auto;
 
 	a{
 		color: $MainFontColor;
 		text-decoration: none;
+	}
+
+	@media (min-width: 600px){
+		padding: 0em 0em 1em 0em;
 	}
 }
 

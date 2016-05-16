@@ -12,7 +12,7 @@ $('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
     nav:true,
-    navText: ['<span class=""></span>','>'],
+    navText: ['<span  class="chevronL"><i class="fa fa-chevron-left" aria-hidden="true"></i></span>', '<span class="chevronR"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>'],
     responsive:{
         0:{
             items:1
