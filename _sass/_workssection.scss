@@ -66,7 +66,7 @@
 		img {
 			position: absolute;
 			top: 22%;
-			left: 23%;
+			left: 17%;
 		}
 	}
 	}
@@ -81,7 +81,7 @@
 		img {
 			position: absolute;
 			top: 0%;
-			left: 25%;
+			left: 12%;
 		}
 	}
 	}
@@ -161,11 +161,11 @@
 	@extend %works-explained-name;
 
 	@media (min-width: 600px){
-		padding: 0em 0em 0em 1.5em;
+		padding: 0em 0em 0em 0.4em;
 	}
 
 	@media (min-width: 900px){
-		padding: 0em 0em 0em 3em;
+		padding: 0em 0em 0em 0em;
 	}
 	
 
