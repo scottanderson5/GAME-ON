@@ -30,7 +30,7 @@
 	padding: 2em 0em 0em 0em;
 }
 
-.about-p{
+.about-p1{
 	width: 47%;
 	font-size: 1.1em;
 	line-spacing: 1.2em;
@@ -38,16 +38,27 @@
 	float: left;
 }
 
-.about-pic{
+.about-pic1{
 	float: right;
 }
 
 .about-intro2{
 	@extend %about-intro;
-	margin: 2em auto;
+	margin: 3em auto;
 }
 
+.about-p2{
+	width: 43%;
+	font-size: 1.1em;
+	line-spacing: 1.2em;
+	margin: 0em 0em 0em 1em;
 
+	float: right;
+}
+
+.about-pic2{
+	float: left;
+}
 
 
 

@@ -93,7 +93,7 @@
 	}
 
 	@media (min-width: 900px){
-		width: 97%;
+		width: 96%;
 	}
 
 }
@@ -133,9 +133,8 @@
 }
 
 .reviews-wrap{
-	padding: 0em 0em 0em 1em;
+	padding: 0em 0em 0em 0.7em;
 	overflow: hidden;
-	//background-color: yellow;
 
 	@media (min-width: 600px){
 		padding: 0em 0em 0em 1.5em;
@@ -214,7 +213,7 @@
 
 .rating-form-answers{
 	@extend %review-form-answers;
-	width: 100%;
+	width: 99%;
 
 	@media (min-width: 600px){
 		//float: right;
@@ -336,7 +335,8 @@
 }
 
 .comment-box{
-	width: 95%;
+	width: 96%;
+	margin-left: 0.55em;
 }
 
 .review-bottom-wrap{
