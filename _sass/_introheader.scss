@@ -16,7 +16,11 @@
 	overflow: hidden;
 	text-align: center;
 	margin: 0 auto;
-	padding: 0em 0em 0em 8em;
+	padding: 0em 0em 0em 2em;
+	
+	@media (min-width: 320px){
+		width: 50%;
+	}
 
 	@media (min-width: 600px){
 		padding: 0;

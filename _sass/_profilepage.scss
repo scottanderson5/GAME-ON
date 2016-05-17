@@ -165,7 +165,11 @@
 }
 
 .thegame{
-	margin: 2em 0em 0em 7.5em;
+	margin: 2em 0em 0em 5.5em;
+	
+	@media (min-width: 350px){	
+		margin: 2em 0em 0em 7.5em;
+	}	
 
 	@media (min-width: 600px){
 		margin: 2em 0em 0em 6em;
@@ -189,8 +193,12 @@
 	font-size: $DashboardColumnHeadersFontSize;
 	font-weight: $DashboardColumnHeadersFontWeight;
 	width: 100%;
-	text-align: center;
-	padding: 1em 0em 1em 0em;
+	padding: 1em 0em 1em 4em;
+
+	@media (min-width: 350px){
+		text-align: center;
+		padding: 1em 0em 1em 0em;
+	}
 }
 
 .user-reviews-bottom{
@@ -245,8 +253,12 @@
 }
 
 .stars-review{
-	width: 10em;
-	margin: 0.5em 0em 0em 0em;
+	width: 8em;
+	
+	@media (min-width: 350px){
+		width: 10em;
+		margin: 0.5em 0em 0em 0em;
+	}	
 }
 
 .single-ratings-wrap{
@@ -265,10 +277,16 @@
 
 .ratings-numbers{
 	list-style-type: none;
-	float: right;
+	float: left;
+	padding: 0em 0em 0em 0.4em;
 
 	li{
 		line-height: 1.7em;
+	}
+
+	@media (min-width: 350px){
+		padding: 0em 0em 0em 0em;
+		float: right;
 	}
 }
 
@@ -328,8 +346,13 @@
 }
 
 .friends-wrap{
-	padding: 0em 0em 0em 3em;
+	padding: 0em 0em 0em 1em;
 	height: 30em;
+
+	@media (min-width: 350px){
+		padding: 0em 0em 0em 3em;
+	}
+	
 }
 
 .friends-list-item{

@@ -141,6 +141,10 @@
 	padding: 1em 0em 0em 0em;
 }
 
+.stars-min-pic{
+	width: 75%;
+}
+
 .review-text{
 	width: 80%;
 	text-align: center;
@@ -153,21 +157,23 @@
 }
 
 .review-ratings{
-
-	margin: 1.5em 0em 0em 0em;
+	display: none;
+	margin: 1em 0em 0em 0em;
 
 	li{
 		font-weight: 600;
 		list-style-type: none;
-		display: inline-block;
 		margin: 0 0.3em;
 		font-size: 0.8em;
 	}
 
 	@media (min-width: 600px){
+		display: block;
+		margin: 1.5em 0em 0em 0em;
 		
 		li{
 			font-size: 1em;
+			display: inline-block;
 			margin: 0 0.6em;
 		}
 	}
