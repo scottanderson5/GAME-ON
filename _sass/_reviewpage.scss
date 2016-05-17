@@ -405,7 +405,7 @@
 .answer-choice{
 	margin: 0em;
 	float: left;
-	font-size: 0.8em;
+	font-size: 0.5em;
 	padding: 0.2em 0em 0em 0em;
 
 	@media (min-width: 350px){
@@ -421,7 +421,7 @@
 .answer-choiceB{
 	margin: 0em;
 	float: left;
-	font-size: 0.8em;
+	font-size: 0.5em;
 	padding: 0.2em 0em 0em 0em;
 
 	@media (min-width: 350px){
@@ -545,13 +545,9 @@
 	}
 
 	@media (min-width: 600px){
-		//margin: 0em 0em 2em 20em;
 		display: none;
 	}
 
-	/*@media (min-width: 900px){
-		display: none;
-	}*/
 }
 
 .review-button-wrap2{
