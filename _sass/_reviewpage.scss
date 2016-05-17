@@ -188,7 +188,13 @@
 .review-form-answers1{
 	@extend %review-form-answers;
 	overflow: hidden;
-	float: right;
+	margin-left: 2.5em;
+	
+
+	@media (min-width: 350px){
+		margin-left: 0em;
+		float: right;
+	}
 
 	@media (min-width: 600px){
 		//width: 28em;
@@ -232,8 +238,13 @@
 
 
 .review-answer-wrap{
-	margin: 0em 0.2em 0em 0em;
-	float: right;
+	
+	
+
+	@media (min-width: 350px){
+		margin: 0em 0.2em 0em 0em;
+		float: right;
+	}
 
 	@media (min-width: 600px){
 		margin: 0em 3em 0em 0em;
