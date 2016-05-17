@@ -17,7 +17,6 @@
 .right-header-overflow-wrap{
 	overflow: hidden;
 	float: right;
-	padding-top: 1em;
 
 	@media (min-width: 900px){
 		display: block;
@@ -43,7 +42,7 @@
 }
 
 .logo-header-wrap{
-	padding: 2.2em 1em 1em 1em;
+	padding: 1em 1em 1em 1em;
 	float: left;
 }
 
@@ -55,7 +54,7 @@
 .header-name-wrap{
 	display: none;
 	float: right;
-	padding: 4em 0em 0em 0em;
+	padding: 3em 0em 0em 0em;
 
 	a{
 		text-decoration: none;
