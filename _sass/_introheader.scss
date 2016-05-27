@@ -38,6 +38,7 @@
 .container2{
 	overflow: hidden;
 	margin: 0em 1em 0em 0em;
+	width: 65%;
 
 	
 	@media (min-width: 600px){
@@ -97,12 +98,12 @@
 
 .play-text{
 	font-family: $MainFontFamily;
-	font-size: 1em;
+	font-size: 100%;
 	font-weight: $IntroFontWeight;
 	color: $IntroSectionFontColor;
 	margin: 0em auto 0.4em 0em;
 	padding: 0.5em 0em 0em 0em;
-	width: 11em;
+	//width: 11em;
 	text-align: left;
 
 	@media (min-width: 900px){
@@ -114,11 +115,11 @@
 
 .tell-text{
 	font-family: $MainFontFamily;
-	font-size: 1em;
+	font-size: 100%;
 	font-weight: $IntroFontWeight;
 	color: $IntroSectionFontColor;
 	margin: 0em 0em 0.4em 0em;
-	width: 15em;
+	//width: 15em;
 	text-align: left;
 
 	@media (min-width: 900px){
@@ -130,12 +131,12 @@
 
 .game-text{
 	font-family: $MainFontFamily;
-	font-size: 2em;
+	font-size: 200%;
 	font-weight: $IntroTitleFontWeight;
 	color: $IntroSectionGameOnFontColor;
 	margin: 0em auto 0em 0em;
 	padding: 0em 0em 0.5em 0em;
-	width: 6em;
+	//width: 6em;
 	text-align: left;
 
 
@@ -149,11 +150,13 @@
 	overflow: hidden;
 	margin: 0em auto 1em auto;
 	padding: 0em 0em 0em 2em;
+	width: 25%;
 
 	@media (min-width: 600px){
 		padding: 0;
 		margin: 1em 0em 0em 0em;
-		display: inline-block;
+		//display: inline-block;
+		float: right;
 	}
 	
 	@media (min-width: 900px){
