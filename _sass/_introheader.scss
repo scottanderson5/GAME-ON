@@ -38,12 +38,13 @@
 .container2{
 	overflow: hidden;
 	margin: 0em 1em 0em 0em;
-	width: 65%;
+	
 
 	
 	@media (min-width: 600px){
 		float: left;
 		margin: 0em 1em 0em 1em;
+		width: 65%;
 	}
 }
 
@@ -150,18 +151,20 @@
 	overflow: hidden;
 	margin: 0em auto 1em auto;
 	padding: 0em 0em 0em 2em;
-	width: 25%;
+
 
 	@media (min-width: 600px){
 		padding: 0;
 		margin: 1em 0em 0em 0em;
 		//display: inline-block;
-		float: right;
+		float: left;
+		width: 25%;
 	}
 	
 	@media (min-width: 900px){
 		margin: 3.5em 0em 0em 0em;
 		padding: 0em 0em 1em 0em;
+		float: right;
 	}
 }
 
