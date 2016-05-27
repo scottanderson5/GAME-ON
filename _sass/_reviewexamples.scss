@@ -60,72 +60,85 @@
 
 .review-example-top{
 	overflow: hidden;
+	width: 100%;
 }
 
 .review-example-top-right{
 	display: inline-block;
 	margin: 0em 0em 0em 1em;
+	padding: 0em 0em 0em 0em;
+	width: 35%;
+}
+
+.review-example-game{
+	width: 90%;
 }
 
 .review-example-top-left{
-	padding: 0em 0.8em 0em 0.2em;
-	margin: 1em 0em 1em 0.5em;
+	padding: 0em 0em 1em 0.2em;
 	overflow: hidden;
 	display: inline-block;
+	width: 45%;
+}
 
-	@media (min-width: 600px){
-		margin: 0em 0em 2.5em 0.5em;
-	}
+
+.review-example-top-right-left{
+	padding: 1.5em 0em 0em 0em;
+	float: left;
+	width: 50%;
 }
 
 .user-example-pic{
-	//width: 35%;
-}
-
-.review-example-top-right-left{
-	padding: 0.5em 0em 0em 0em;
-	float: left;
+	width: 100%;
 }
 
 .review-example-top-right-right{
 	overflow: hidden;
-	margin: 1.2em 0em 0em 0em;
-	padding: 0em 0em 0em 0em;
+	margin: 1.8em 0em 0em 0em;
+	//padding: 0em 0em 0em 0em;
 	list-style-type: none;
 	text-align: left;
 	float: right;
+	width: 50%;
 
 }
 
 .user-info-wrap-status{
 	overflow: hidden;
+	width: 100%;
 }
 
 .user-info-wrap-top{
 	margin: 0em 0em 0em 0.3em;
+	//font-size: 100%;
 }
 
 .user-info-name{
 	font-family: $MainFontFamily;
 	font-weight: $ReviewUserFontWeight;
-	font-size: $ReviewUserFontSize;
+	//font-size: $ReviewUserFontSize;
+	font-size: 100%;
 }
 
 .user-town{
 	font-family: $MainFontFamily;
 	color: $UserTownColor;
+	font-size: 85%;
 }	
 
 .status-symbol{
 	float: left;
+	width: 23%;
 }
 
 .k-symbol-size{
-	width: 1.5em;
+	//width: 1.5em;
+	width: 100%;
 }
 
 .b-symbol-size{
-	width: 1.6em;
+	//width: 1.6em;
+	width: 100%;
 	margin: 0.3em 0em 0em 0em;
 }
 
@@ -133,6 +146,7 @@
 	font-family: $MainFontFamily;
 	padding: 0.7em 0em 0em 0em;
 	float: left;
+	font-size: 95%;
 }
 
 .status-color{
@@ -146,7 +160,7 @@
 }
 
 .stars-min-pic{
-	width: 75%;
+	width: 65%;
 }
 
 .review-text{
@@ -183,9 +197,6 @@
 	}
 }
 
-.review-example-game{
-	//width: 20%;
-}
 
 
 

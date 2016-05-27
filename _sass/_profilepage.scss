@@ -22,12 +22,15 @@
 	margin: 2em auto 0em auto;
 	padding: 0em 0em 4em 0em;
 	text-align: center;
+	//width: 80%;
 	
 }
 
 .step-wrap-profile{
 	display: none;
 	margin: 0 auto 1em auto;
+	width: 10%;
+	font-size: 80%;
 
 	a{
 		color: $MainFontColor;
@@ -43,6 +46,8 @@
 .step-wrap-profileB{
 	display: none;
 	margin: 0 auto 1em auto;
+	width: 10%;
+	font-size: 80%;
 
 	a{
 		text-decoration: none;
@@ -58,55 +63,65 @@
 .step-wrap-profileD{
 	display: inline-block;
 	margin: 0 auto 1em auto;
+	width: 60%;
+	font-size: 100%;
 
 	a{
 		text-decoration: none;
 		color: $MainFontColor;
 	}
 
+	@media (min-width: 600px){
+		width: 10%;
+		font-size: 80%;
+	}
+
 }
 
 .step-sizing-profile{
-	width: 13em;
+	//width: 13em;
+	width: 100%;
 
 	@media (min-width: 600px){
-		width: 7em;
+		//width: 7em;
 	}
 
 	@media (min-width: 900px){
-		width: 8em;
+		//width: 8em;
 	}
 }
 
 .works-arrow-profile{
 	display: none;
-	margin: 1em 0.5em 1.5em 0em;
+	margin-bottom: 2.35%;
+	width: 8%;
 
 
 	@media (min-width: 600px){
 		display: inline-block;
-		margin: 1em 0.5em 3.25em 0em;
-		width: 3em;
+		//margin: 1em 0.5em 3.25em 0em;
+		//width: 3em;
 	}
 
 	@media (min-width: 900px){
-		margin: 1em 0.5em 2em 0em;
-		width: 6em;
+		//margin: 1em 0.5em 2em 0em;
+		//width: 6em;
 	}
 
 }
 
 .works-arrow-profileB{
 	display: none;
-	margin: 0em 0em 4.5em 0em;
+	margin-bottom: 5.7%;
+	width: 8%;
 
 	@media (min-width: 600px){
 		display: inline-block;
-		width: 3em;
+		//width: 3em;
 	}
 
 	@media (min-width: 900px){
-		width: 6em;
+		//width: 6em;
 	}
 }
 
@@ -169,10 +184,11 @@
 
 .user-nowgame-bottom{
 	background-color: $BackgroundColor;
+	margin: 0 auto;
 }
 
 .thegame{
-	margin: 2em 0em 0em 5.5em;
+	//margin: 2em 0em 0em 5.5em;
 	
 	@media (min-width: 350px){	
 		margin: 2em 0em 0em 0em;
@@ -239,7 +255,7 @@
 	@media (min-width: 900px){
 		margin: 0em 0em 0em 1em;
 		float: left;
-		width: 46%;
+		width: 40%;
 	}
 }
 
@@ -255,6 +271,7 @@
 .single-review-wrap-info{
 	margin: 0 auto;
 	font-size: 0.9em;
+
 	
 
 	@media (min-width: 600px){
@@ -265,6 +282,7 @@
 		font-size: 1em;
 		float: left;
 		margin: 0em 0em 0em 1em;
+		width: 45%;
 
 	}
 }
@@ -274,20 +292,27 @@
 	font-weight: $DashboardColumnTextFontWeight;
 	border-bottom: 1px solid $BorderColor;
 	padding: 0.5em 0.1em 0.3em 0.1em;
-	width: 10em;
+	//width: 10em;
+	width: 100%;
 }
 
 .single-user-review{
 	font-family: $MainFontFamily;
 	font-weight: $DashboardColumnTextFontWeight;
 	margin: 0.5em 0em 0em 0em;
+	padding: 0em 0em 1em 0em;
+
+	@media (min-width: 900px){
+		padding: 0em;
+	}
 }
 
 .stars-review{
-	width: 8em;
+	//width: 8em;
+	width: 90%;
 	
 	@media (min-width: 350px){
-		width: 10em;
+		//width: 10em;
 		margin: 0.5em 0em 0em 0em;
 	}	
 }
@@ -298,11 +323,11 @@
 	font-size: 1em;
 
 	@media (min-width: 600px){
-		font-size: 40%;
+		font-size: 80%;
 	}
 
 	@media (min-width: 900px){
-		font-size: 1em;
+		//font-size: 1em;
 	}
 }
 
@@ -325,7 +350,7 @@
 	}
 
 	@media (min-width: 350px){
-		padding: 0em 0em 0em 0em;
+		padding: 0em 0em 0em 1em;
 		float: right;
 	}
 }
@@ -334,16 +359,29 @@
 
 .user-details-wrap{
 	width: 22em;
+	
 	margin: 1em auto;
 
 	@media (min-width: 600px){
-		width: 19em;
+		//width: 19em;
 		margin: 0;
 		float: right;
+		width: 40%;
 	}
 
 	@media (min-width: 900px){
-		width: 22em;
+		//width: 22em;
+	}
+}
+
+.user-reviews-bottom2{
+	background-color: $BackgroundColor;
+	//padding: 0em 0em 0em 3em;
+	width: 90%;
+	margin: 0 auto;
+
+	@media (min-width: 900px){
+		width: 100%;
 	}
 }
 
@@ -353,42 +391,84 @@
 	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.1), 0 2px 2px 0 rgba(0, 0, 0, 0.1);
 	height: 12em;
 	margin: 0em 0em 3em 0em;
+	width: 100%;
 }
 
 .user-status-description{
 	list-style-type: none;
 	text-align: center;
-	padding: 1em 0em 0em 0em;
+	padding: 1em 0em 0em 2em;
 	float: left;
+	width: 45%;
+
+	@media (min-width: 600px){
+		padding: 1.5em 0em 3em 2em;
+	}
 
 	@media (min-width: 900px){
-		padding: 1.5em 3em 3em 4em;
+		//padding: 1.5em 0em 3em 2em;
 	}
 }
 
 .user-li-status{
 	color: $StatusColor;
-	font-size: 48px;
+	//font-size: 43px;
+	font-size: 300%;
 
 	@media (min-width: 600px){
-		font-size: 40px;
+		//font-size: 40px;
+		font-size: 200%;
 	}
 
 	@media (min-width: 900px){
-		font-size: 48px;
+		//font-size: 43px;
+		font-size: 300%;
 	}
 }
 
+.user-li-reviews{
+	font-size: 85%;
+}
+
 .user-status-pic{
-	float: left;
-	padding: 0.3em 0em 0em 0em;
+	float: right;
+	padding: 0.3em 3em 0em 0em;
+	width: 20%;
+
+	@media (min-width: 600px){
+		float: left;
+		padding: 0.3em 0em 0em 1.5em;
+	}
+
+	@media (min-width: 900px){
+		padding: 0.3em 0em 0em 2em;
+	}
 }
 
 .largeking{
 	width: 3.1em;
+
+	@media (min-width: 600px){
+		width: 2.6em;
+	}
+
+	@media (min-width: 900px){
+		width: 3.1em;
+	}
+
 }
 
 //USER FRIENDS
+
+.review-example-top-right-left2{
+	padding: 0.5em 0em 0em 0em;
+	float: left;
+	width: 45%;
+}
+
+.dashboard-friend-pic{
+	width: 100%;
+}
 
 .user-reviews-friends{
 	border: 1px solid $BorderColor;
@@ -402,7 +482,7 @@
 	height: 30em;
 
 	@media (min-width: 350px){
-		padding: 0em 0em 0em 3em;
+		padding: 0em 0em 0em 0.5em;
 	}
 	
 }
@@ -423,6 +503,7 @@
 	list-style-type: none;
 	text-align: left;
 	float: right;
+	width: 45%;
 
 }
 
