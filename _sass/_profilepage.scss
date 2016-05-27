@@ -480,6 +480,7 @@
 .friends-wrap{
 	padding: 0em 0em 0em 1em;
 	height: 30em;
+	text-align: center;
 
 	@media (min-width: 350px){
 		padding: 0em 0em 0em 0.5em;
@@ -490,7 +491,7 @@
 .friends-list-item{
 	background-color: $BackgroundColor;
 	padding: 0em 0.8em 0em 0.2em;
-	margin: 1em 0em 1em 0.5em;
+	margin: 1em auto 1em auto;
 	overflow: hidden;
 	display: inline-block;
 
