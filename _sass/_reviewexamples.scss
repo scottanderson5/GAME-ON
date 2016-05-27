@@ -31,6 +31,8 @@
 	@media (min-width: 600px){
 		width: 70%;
 		margin: 0 auto 1em auto;
+		height: 24em;
+
 	}
 
 	@media (min-width: 900px){
@@ -144,9 +146,9 @@
 
 .status-description{
 	font-family: $MainFontFamily;
-	padding: 0.7em 0em 0em 0em;
+	padding-top: 7%;
 	float: left;
-	font-size: 95%;
+	font-size: 90%;
 }
 
 .status-color{
@@ -164,14 +166,15 @@
 }
 
 .review-text{
-	width: 80%;
+	width: 90%;
 	text-align: center;
 	line-height: 1.3em;
 	margin: 1em auto;
+	font-size: 90%;
 
-	@media (min-width: 600px){
+	/*@media (min-width: 600px){
 		width: 23em;
-	}
+	}*/
 }
 
 .review-ratings{
@@ -190,9 +193,9 @@
 		margin: 1.5em 0em 0em 0em;
 		
 		li{
-			font-size: 1em;
+			font-size: 78%;
 			display: inline-block;
-			margin: 0 0.6em;
+			//margin: 0 0.6em;
 		}
 	}
 }
