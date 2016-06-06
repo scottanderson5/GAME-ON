@@ -40,6 +40,7 @@
 
 .review-form-wrap3{
 	@extend %review-form-wrap;
+	width: 50%;
 
 	@media (min-width: 600px){
 		float: left;
@@ -483,7 +484,7 @@
 	}
 	
 	@media (min-width: 900px){
-		width: 61%;
+		width: 71%;
 	}	
 }
 
