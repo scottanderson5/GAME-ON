@@ -40,10 +40,11 @@
 
 .review-form-wrap3{
 	@extend %review-form-wrap;
-	width: 50%;
+	width: 90%;
 
 	@media (min-width: 600px){
 		float: left;
+		width: 50%;
 	}
 }
 
@@ -214,7 +215,7 @@
 
 .review-form-answers2{
 	@extend %review-form-answers;
-	border-bottom: 1px solid $RequestFormBorderColor;
+	//border-bottom: 1px solid $RequestFormBorderColor;
 	float: right;
 
 }
@@ -405,7 +406,7 @@
 
 	@media (min-width: 350px){
 		font-size: 0.8em;
-		padding: 0em;
+		padding: 1.5em 0em 0em 0em;
 	}
 
 	@media (min-width: 600px){
