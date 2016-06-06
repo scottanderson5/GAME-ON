@@ -286,20 +286,6 @@
 	}
 }
 
-.checkboxes-wrap2{
-	@extend %answers-wrap;
-	margin: 0em 0em 0em 1em;
-
-	@media (min-width: 350px){
-		margin: 0em 0em 0em 2.4em;
-	}
-
-	@media (min-width: 600px){
-		margin: 0em 0.1em 0em 1.5em;
-		padding: 0em 0em 0em 0.2em;
-	}
-}
-
 .checkboxes-wrap3{
 	@extend %answers-wrap;
 	margin: 0em 0em 0em 1em;
