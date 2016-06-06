@@ -197,9 +197,9 @@
 	}
 
 	@media (min-width: 600px){
-		//width: 28em;
-		float: left;
-		margin: 0em 0em 0em 6.6em;
+		width: 80%;
+		//float: left;
+		margin: 0em 0em 0em 0em;
 	}
 
 }
@@ -307,7 +307,7 @@
 	}
 
 	@media (min-width: 600px){
-		margin: 0em 0.1em 0em 1.9em;
+		margin: 0em 0.1em 0em 1.5em;
 	}
 }
 
@@ -320,8 +320,13 @@
 	}
 
 	@media (min-width: 600px){
-		margin: 0em 0em 0em 2.25em;
+		margin: 0em 0em 0em 1.8em;
 	}
+}
+
+.checknum{
+	font-size: 0.8em;
+	padding: 0em 0em 0em 0.3em;
 }
 
 .review-answerB{
@@ -420,12 +425,13 @@
 	padding: 0.2em 0em 0em 0em;
 
 	@media (min-width: 350px){
-		font-size: 1em;
+		font-size: 0.8em;
 		padding: 0em;
 	}
 
 	@media (min-width: 600px){
 		margin: 0em 0em 0em 0em;
+		padding: 1.5em 0em 0em 0em;
 	}
 }
 
@@ -436,7 +442,7 @@
 	padding: 0.2em 0em 0em 0em;
 
 	@media (min-width: 350px){
-		font-size: 1em;
+		font-size: 0.8em;
 	}
 
 	@media (min-width: 600px){
